@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Admin Shop HNA | Dashboard</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+  <link rel="stylesheet" href="plugins/style.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -77,7 +79,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">ADMIN 1</a>
+          <a href="#" class="d-block">Xin chào ADMIN</a>
         </div>
       </div>
 
@@ -88,26 +90,34 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-              with font-awesome or any other icon font library -->
+               with font-awesome or any other icon font library -->
           <li class ="nav-item">
-            <a href="" class="nav-link">Trang chủ</a>
+                <a href="index.php?act=home" class="nav-link">Trang chủ</a>
           </li>
           <li class ="nav-item">
-            <a href="" class="nav-link">Quản lý danh mục</a>
+            <a href="index.php?act=danhmuc" class="nav-link">Quản lý danh mục</a>
           </li>
           <li class ="nav-item">
-            <a href="" class="nav-link">Quản lý sản phẩm</a>
+            <a href="index.php?act=sanpham" class="nav-link">Quản lý sản phẩm</a>
           </li>
           <li class ="nav-item">
-            <a href="" class="nav-link">Quản lý bình luận</a>
+            <a href="index.php?act=binhluan" class="nav-link">Quản lý bình luận</a>
           </li>
           <li class ="nav-item">
-            <a href="" class="nav-link">Quản lý tài khoản</a>
+            <a href="index.php?act=taikhoan" class="nav-link">Quản lý tài khoản</a>
+          </li>
+          <li class ="nav-item">
+            <a href="index.php?act=donhang" class="nav-link">Quản lý đơn hàng</a>
+          </li>
+          <li class ="nav-item">
+            <a href="index.php?act=phanquyen" class="nav-link">Phân quyền</a>
+          </li>
+          <li class ="nav-item">
+            <a href="" class="nav-link">Đăng xuất</a>
           </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
-    </div>
     </div>
     <!-- /.sidebar -->
   </aside>
