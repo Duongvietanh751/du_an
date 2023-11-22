@@ -3,16 +3,21 @@
 <div class="content-wrapper">
     <div class="formdanhmuc">
       <h1>Thêm Danh Mục</h1>
-      <form action="#" method="POST">
+      <form action="#" method="POST" onsubmit="return kiemtradanhmuc();" >
         <div class="formdanhmuc_input">
           <label for="">Mã Loại</label>
           <input type="text" >
         </div>
         <div class="formdanhmuc_input">
           <label for="">Tên Loại</label>
-          <input type="text" name="tenloai">
+          <input type="text" name="tenloai" id="tenloai">
         </div>
-        <input type="submit" value="Them" name="btnsub">
+        <div class="formdanhmuc_input">
+        <div id="thongbao" class="thongbao"></div>
+        </div>
+        <div class="formdanhmuc_input">
+        <input  type="submit" value="THÊM" name="btnsub">
+        </div>
       </form>
     </div>
     <div class="listdanhmuc">

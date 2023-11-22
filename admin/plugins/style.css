@@ -78,3 +78,9 @@ Danh sách list */
     padding: 7px 15px;
     margin: 10px;
 }
+.formdanhmuc_input input[[type="submit"]]{
+
+}
+.formdanhmuc_input{
+	padding-bottom: 5px;
+}
