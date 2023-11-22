@@ -38,6 +38,10 @@ include '../model/danhmuc.php' ;
                 # code...
                 include"taikhoan/taikhoan.php";
                 break;
+            case 'suasp':
+                    # code...
+                    include"sanpham/suasp.php";
+                    break;
             default:
                 include"home.php";
                 break;
