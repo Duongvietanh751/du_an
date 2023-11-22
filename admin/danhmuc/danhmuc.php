@@ -12,7 +12,7 @@
           <label for="">Tên Loại</label>
           <input type="text" name="tenloai">
         </div>
-        <a href="" class="button" name="btnsub" type="submit">Thêm</a>
+        <input type="submit" value="Them" name="btnsub">
       </form>
     </div>
     <div class="listdanhmuc">
