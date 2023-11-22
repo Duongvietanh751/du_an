@@ -1,12 +1,27 @@
 <?php
+include '../model/pdo.php';
+include '../model/danhmuc.php' ;   
+?>
+
+
+
+
+
+
+<?php
     include"header.php";
     if(isset($_GET['act'])){
         $act=$_GET['act'];
         switch ($act) {
             case 'danhmuc':
+                $ds_dm = ds_dm();
+                if(isset($_POST['btnsub'])){
+                    add_dm($_POST['tenloai']);
+                }
                 # code...
                 include"danhmuc/danhmuc.php";
                 break;
+            
             case 'home':
                 # code...
                 include"home.php";
