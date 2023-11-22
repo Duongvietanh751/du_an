@@ -42,6 +42,10 @@ include '../model/danhmuc.php' ;
                     # code...
                     include"sanpham/suasp.php";
                     break;
+            case 'suadm':
+                        # code...
+                        include"danhmuc/suadm.php";
+                        break;
             default:
                 include"home.php";
                 break;
