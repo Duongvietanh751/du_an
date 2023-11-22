@@ -15,7 +15,7 @@ function kiemtradanhmuc(){
     var thongbao = document.getElementById("thongbao");
     
     if (tenloai.value.length <= 6) {
-        thongbao.innerHTML = "Tên sản phẩm phải lớn hơn 6 ký tự!";
+        thongbao.innerHTML = "Tên danh mục phải lớn hơn 6 ký tự";
         return false;
     }
 
