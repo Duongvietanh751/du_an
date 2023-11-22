@@ -3,7 +3,7 @@ function kiemtra(){
     var thongbao = document.getElementById("thongbao");
 
     if (tennd.value.length <= 6) {
-        thongbao.innerHTML = "Tên người dùng phải lớn hơn 6 ký tự!";
+        thongbao.innerHTML = "Tên sản phẩm lớn hơn 6 ký tự!";
         return false;
     }
 
