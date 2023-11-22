@@ -33,7 +33,7 @@
         <tr>
           <td><?php echo $key +1 ?></td>
           <td><?php echo $value['name']; ?></td>
-          <td><a href="">Sửa</a> / <a href="">Xóa</a></td>
+          <td><a href="index.php?act=suadm">Sửa</a> / <a href="">Xóa</a></td>
         </tr>
       <?php endforeach ?>
       </table>

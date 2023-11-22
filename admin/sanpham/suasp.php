@@ -1,8 +1,15 @@
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <div class="formdanhmuc">
-      <h1>Thêm Sản Phẩm</h1>
+      <h1>Sửa Sản Phẩm</h1>
       <form action="" onsubmit="return kiemtra();" method=""  >
+        <div class="formdanhmuc_input">
+            <label for="">Danh mục</label>
+            <select name="" id="">
+                <option value="">Tất cả</option>
+                <option value="">Ghế</option>
+                <option value="">Tủ</option>
+            </select>
+        </div>
         <div class="formdanhmuc_input">
             <label for="">Tên sản phẩm</label>
             <input type="text" name="name_sanpham" id="tennd">
@@ -20,29 +27,9 @@
             <textarea name="desc"  cols="30" rows="10"></textarea>
         </div>
         <div id="thongbao" class="thongbao"></div>
-        <button type="submit" class="button">Thêm</button>
+        <div class="formdanhmuc_input">
+            <input type="submit" value="Cập Nhật">
+        </div>
       </form>
     </div>
-    <div class="listdanhmuc">
-      <h1>Danh sách sản phẩm</h1>
-      <table>
-        <tr>
-            <th>Mã loại</th>
-            <th>Tên sản phẩm</th>
-            <th>Hình</th>
-            <th>Giá</th>
-            <th>Lượt xem</th>
-            <th>Chức năng</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>GHế sofa</td>
-          <td><img src="countdown.png" alt="" width="170px"></td>
-          <td>5000.000 VND</td>
-          <td>10</td>
-          <td><a href="index.php?act=suasp">Sửa</a> / <a href="">Xóa</a></td>
-        </tr>
-      </table>
-    </div>
   </div>
-  <!-- /.content-wrapper -->
