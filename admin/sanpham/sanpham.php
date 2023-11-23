@@ -2,7 +2,7 @@
 <div class="content-wrapper">
     <div class="formdanhmuc">
       <h1>Thêm Sản Phẩm</h1>
-      <form action="" onsubmit="return kiemtra();" method=""  >
+      <form action=""  method=""  >
         <div class="formdanhmuc_input">
             <label for="">Tên sản phẩm</label>
             <input type="text" name="name_sanpham" id="tennd">

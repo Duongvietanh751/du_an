@@ -1,7 +1,7 @@
 <div class="content-wrapper">
     <div class="formdanhmuc">
       <h1>Sửa Sản Phẩm</h1>
-      <form action="" onsubmit="return kiemtra();" method=""  >
+      <form action=""  method=""  >
         <div class="formdanhmuc_input">
             <label for="">Danh mục</label>
             <select name="" id="">
