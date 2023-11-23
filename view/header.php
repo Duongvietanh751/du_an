@@ -42,11 +42,7 @@
                 <div class="col-lg-3">
                     <!-- Header Logo Start -->
                     <div class="header-logo">
-<<<<<<< HEAD
-                        <!-- <a href="index.php"><img src="view/assets/images/HNA.png" width="154" height="46" alt="Logo" /></a> -->
-=======
                         <a href="index.php"><img src="view/assets/images/AHN.png" width="154" height="46" alt="Logo" /></a>
->>>>>>> second
                     </div>
                     <!-- Header Logo End -->
                 </div>
