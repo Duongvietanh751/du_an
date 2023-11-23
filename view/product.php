@@ -151,7 +151,7 @@
                                 </div>
                                 <div class="meta-action">
                                     <button class="btn btn-dark btn-hover-primary">
-                                        Add To Cart
+                                    <a href="index.php?act=cart" >Add To Cart</a>  
                                     </button>
                                 </div>
                                 <div class="meta-action">

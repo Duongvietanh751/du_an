@@ -18,7 +18,7 @@
                                     Unique Furniture Style Design for Your
                                     Family
                                 </p>
-                                <a href="product-details.html" class="btn btn-primary btn-hover-dark btn-margin">purchase now</a>
+                                <a href="index.php?act=product" class="btn btn-primary btn-hover-dark btn-margin">purchase now</a>
                             </div>
                             <!-- Slider Content End -->
 
@@ -42,7 +42,7 @@
                                     Unique Furniture Style Design for Your
                                     Family
                                 </p>
-                                <a href="product-details.html" class="btn btn-primary btn-hover-dark btn-margin">purchase now</a>
+                                <a href="index.php?act=product" class="btn btn-primary btn-hover-dark btn-margin">purchase now</a>
                             </div>
                             <!-- Slider Content End -->
 
@@ -66,7 +66,7 @@
                                     Unique Furniture Style Design for Your
                                     Family
                                 </p>
-                                <a href="product-details.html" class="btn btn-primary btn-hover-dark btn-margin">purchase now</a>
+                                <a href="index.php?act=product" class="btn btn-primary btn-hover-dark btn-margin">purchase now</a>
                             </div>
                             <!-- Slider Content End -->
 
@@ -224,10 +224,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-01.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-01.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Elona
+                                                                <a href="index.php?act=product">Elona
                                                                     bedside
                                                                     grey
                                                                     table</a>
@@ -261,10 +261,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-02.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-02.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Simple
+                                                                <a href="index.php?act=product">Simple
                                                                     minimal
                                                                     Chair</a>
                                                             </h4>
@@ -297,10 +297,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-03.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-03.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">
+                                                                <a href="index.php?act=product">
                                                                     Pendant
                                                                     Chandelier
                                                                     Light</a>
@@ -340,10 +340,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-04.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-04.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">High
+                                                                <a href="index.php?act=product">High
                                                                     quality
                                                                     vase
                                                                     bottle</a>
@@ -377,10 +377,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-05.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-05.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Living
+                                                                <a href="index.php?act=product">Living
                                                                     &
                                                                     Bedroom
                                                                     Chair</a>
@@ -414,10 +414,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-06.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-06.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Herman
+                                                                <a href="index.php?act=product">Herman
                                                                     Arm Grey
                                                                     Chair</a>
                                                             </h4>
@@ -456,10 +456,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-07.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-07.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Wooden
+                                                                <a href="index.php?act=product">Wooden
                                                                     decorations</a>
                                                             </h4>
                                                             <div class="price">
@@ -491,10 +491,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-08.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-08.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Herman
+                                                                <a href="index.php?act=product">Herman
                                                                     Seater
                                                                     Sofa</a>
                                                             </h4>
@@ -527,10 +527,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-09.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-09.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Reece
+                                                                <a href="index.php?act=product">Reece
                                                                     Seater
                                                                     Sofa</a>
                                                             </h4>
@@ -715,10 +715,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-04.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-04.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">High
+                                                                <a href="index.php?act=product">High
                                                                     quality
                                                                     vase
                                                                     bottle</a>
@@ -752,10 +752,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-05.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-05.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Living
+                                                                <a href="index.php?act=product">Living
                                                                     &
                                                                     Bedroom
                                                                     Chair</a>
@@ -789,10 +789,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-06.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-06.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Herman
+                                                                <a href="index.php?act=product">Herman
                                                                     Arm Grey
                                                                     Chair</a>
                                                             </h4>
@@ -831,10 +831,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-01.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-01.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Elona
+                                                                <a href="index.php?act=product">Elona
                                                                     bedside
                                                                     grey
                                                                     table</a>
@@ -868,10 +868,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-02.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-02.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Simple
+                                                                <a href="index.php?act=product">Simple
                                                                     minimal
                                                                     Chair</a>
                                                             </h4>
@@ -904,10 +904,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-03.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-03.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">
+                                                                <a href="index.php?act=product">
                                                                     Pendant
                                                                     Chandelier
                                                                     Light</a>
@@ -947,10 +947,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-07.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-07.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Wooden
+                                                                <a href="index.php?act=product">Wooden
                                                                     decorations</a>
                                                             </h4>
                                                             <div class="price">
@@ -982,10 +982,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-08.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-08.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Herman
+                                                                <a href="index.php?act=product">Herman
                                                                     Seater
                                                                     Sofa</a>
                                                             </h4>
@@ -1018,10 +1018,10 @@
                                                 <div class="swiper-slide">
                                                     <!-- Single Product Start -->
                                                     <div class="single-product">
-                                                        <a href="product-details.html"><img src="view/assets/images/product/product-09.jpg" width="270" height="303" alt="product" /></a>
+                                                        <a href="index.php?act=product"><img src="view/assets/images/product/product-09.jpg" width="270" height="303" alt="product" /></a>
                                                         <div class="product-content">
                                                             <h4 class="title">
-                                                                <a href="product-details.html">Reece
+                                                                <a href="index.php?act=product">Reece
                                                                     Seater
                                                                     Sofa</a>
                                                             </h4>
@@ -1177,7 +1177,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-07.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Wooden
+                                                    <a href="index.php?act=product">Wooden
                                                         decorations</a>
                                                 </h4>
                                                 <div class="price">
@@ -1211,7 +1211,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-08.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Herman Seater
+                                                    <a href="index.php?act=product">Herman Seater
                                                         Sofa</a>
                                                 </h4>
                                                 <div class="price">
@@ -1245,7 +1245,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-09.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Reece Seater
+                                                    <a href="index.php?act=product">Reece Seater
                                                         Sofa</a>
                                                 </h4>
                                                 <div class="price">
@@ -1279,7 +1279,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-10.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Round Swivel
+                                                    <a href="index.php?act=product">Round Swivel
                                                         Chair</a>
                                                 </h4>
                                                 <div class="price">
@@ -1319,7 +1319,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-01.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Elona bedside grey
+                                                    <a href="index.php?act=product">Elona bedside grey
                                                         table</a>
                                                 </h4>
                                                 <div class="price">
@@ -1353,7 +1353,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-02.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Simple minimal
+                                                    <a href="index.php?act=product">Simple minimal
                                                         Chair</a>
                                                 </h4>
                                                 <div class="price">
@@ -1387,7 +1387,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-03.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Pendant Chandelier
+                                                    <a href="index.php?act=product">Pendant Chandelier
                                                         Light</a>
                                                 </h4>
                                                 <div class="price">
@@ -1421,7 +1421,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-04.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">High quality vase
+                                                    <a href="index.php?act=product">High quality vase
                                                         bottle</a>
                                                 </h4>
                                                 <div class="price">
@@ -1461,7 +1461,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-04.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">High quality vase
+                                                    <a href="index.php?act=product">High quality vase
                                                         bottle</a>
                                                 </h4>
                                                 <div class="price">
@@ -1495,7 +1495,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-03.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Pendant Chandelier
+                                                    <a href="index.php?act=product">Pendant Chandelier
                                                         Light</a>
                                                 </h4>
                                                 <div class="price">
@@ -1529,7 +1529,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-01.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Elona bedside grey
+                                                    <a href="index.php?act=product">Elona bedside grey
                                                         table</a>
                                                 </h4>
                                                 <div class="price">
@@ -1563,7 +1563,7 @@
                                             <a href="#"><img src="view/assets/images/product/product-10.jpg" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Round Swivel
+                                                    <a href="index.php?act=product">Round Swivel
                                                         Chair</a>
                                                 </h4>
                                                 <div class="price">
@@ -1616,11 +1616,11 @@
                             <div class="products-banner-content">
                                 <div class="banner-content-wrapper">
                                     <h4 class="title">
-                                        <a href="product-details.html">Drawing Furniture</a>
+                                        <a href="index.php?act=product">Drawing Furniture</a>
                                     </h4>
                                     <span class="products-count"
                                             >15 Products</span>
-                                    <a href="product-details.html" class="arrow"><i class="pe-7s-angle-right"></i></a>
+                                    <a href="index.php?act=product" class="arrow"><i class="pe-7s-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1634,11 +1634,11 @@
                             <div class="products-banner-content">
                                 <div class="banner-content-wrapper">
                                     <h4 class="title">
-                                        <a href="product-details.html">Drawing Furniture</a>
+                                        <a href="index.php?act=product">Drawing Furniture</a>
                                     </h4>
                                     <span class="products-count"
                                             >15 Products</span>
-                                    <a href="product-details.html" class="arrow"><i class="pe-7s-angle-right"></i></a>
+                                    <a href="index.php?act=product" class="arrow"><i class="pe-7s-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1652,11 +1652,11 @@
                             <div class="products-banner-content">
                                 <div class="banner-content-wrapper">
                                     <h4 class="title">
-                                        <a href="product-details.html">Drawing Furniture</a>
+                                        <a href="index.php?act=product">Drawing Furniture</a>
                                     </h4>
                                     <span class="products-count"
                                             >15 Products</span>
-                                    <a href="product-details.html" class="arrow"><i class="pe-7s-angle-right"></i></a>
+                                    <a href="index.php?act=product" class="arrow"><i class="pe-7s-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1670,11 +1670,11 @@
                             <div class="products-banner-content">
                                 <div class="banner-content-wrapper">
                                     <h4 class="title">
-                                        <a href="product-details.html">Drawing Furniture</a>
+                                        <a href="index.php?act=product">Drawing Furniture</a>
                                     </h4>
                                     <span class="products-count"
                                             >15 Products</span>
-                                    <a href="product-details.html" class="arrow"><i class="pe-7s-angle-right"></i></a>
+                                    <a href="index.php?act=product" class="arrow"><i class="pe-7s-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>

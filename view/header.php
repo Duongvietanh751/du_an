@@ -11,7 +11,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="view/assets/images/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="view/assets/images/AHN.png" />
 
     <!-- CSS
 	============================================ -->
@@ -42,7 +42,7 @@
                 <div class="col-lg-3">
                     <!-- Header Logo Start -->
                     <div class="header-logo">
-                        <!-- <a href="index.php"><img src="view/assets/images/HNA.png" width="154" height="46" alt="Logo" /></a> -->
+                        <a href="index.php"><img src="view/assets/images/AHN.png" width="154" height="46" alt="Logo" /></a>
                     </div>
                     <!-- Header Logo End -->
                 </div>

@@ -156,7 +156,7 @@
                 <!-- Cart btn Start -->
                 <div class="cart-btn">
                     <div class="left-btn">
-                        <a href="shop-grid-left-sidebar.html" class="btn btn-dark btn-hover-primary">Continue Shopping</a>
+                        <a href="index.php?act=shop" class="btn btn-dark btn-hover-primary">Continue Shopping</a>
                     </div>
                     <div class="right-btn">
                         <a href="#" class="btn btn-outline-dark">Clear Cart</a>
@@ -238,7 +238,7 @@
                             </table>
                         </div>
                         <div class="cart-total-btn">
-                            <a href="#" class="btn btn-dark btn-hover-primary btn-block">Proceed To Checkout</a>
+                            <a href="index.php?act=checkout" class="btn btn-dark btn-hover-primary btn-block">Proceed To Checkout</a>
                         </div>
                     </div>
                     <!-- Cart Totals End -->
