@@ -10,7 +10,7 @@
         </div>
         <div class="formdanhmuc_input">
           <label for="">Tên Loại</label>
-          <input type="text" name="tenloai" id="tenloai">
+          <input type="text" name="tenloai">
         </div>
         <div class="formdanhmuc_input">
         <div id="thongbao" class="thongbao"></div>
@@ -28,12 +28,14 @@
           <th>Tên danh mục</th>
           <th>Chức năng</th>
         </tr>
-      <?php foreach ($ds_dm as $key => $value ):  extract($value)  ?>
+      <?php foreach ($ds_dm as $key => $value ):  extract($value);
+       $suadm = "?act=suadm&id=".$id;
+       $xoadm = "?act=xoadm&id=".$id;  ?>
         
         <tr>
           <td><?php echo $key +1 ?></td>
           <td><?php echo $value['name']; ?></td>
-          <td><a href="index.php?act=suadm">Sửa</a> / <a href="">Xóa</a></td>
+          <td><a href=<?php echo "'.$suadm.'" ?>.id;>Sửa</a> / <a href=<?php echo "'.$xoadm.'" ?>.id;>Xóa</a></td>
         </tr>
       <?php endforeach ?>
       </table>
