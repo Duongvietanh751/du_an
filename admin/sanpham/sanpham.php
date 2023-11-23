@@ -19,8 +19,12 @@
             <label for="">Mô tả</label>
             <textarea name="desc"  cols="30" rows="10"></textarea>
         </div>
+        <div class="formdanhmuc_input">
+            <label for="">Danh mục</label>
+            <input type="text" name="danhmuc">
+        </div>
         <div id="thongbao" class="thongbao"></div>
-        <button type="submit" class="button">Thêm</button>
+        <input type="submit" class="button" name ="btnsub" value = "Thêm">
       </form>
     </div>
     <div class="listdanhmuc">
@@ -32,7 +36,17 @@
             <th>Hình</th>
             <th>Giá</th>
             <th>Lượt xem</th>
+            <th>Danh mục</th>
             <th>Chức năng</th>
+        </tr>
+        <?php foreach ($ds_sp as$key => $value ): ?>
+        <tr>
+          <td>1</td>
+          <td>GHế sofa</td>
+          <td><img src="countdown.png" alt="" width="170px"></td>
+          <td>5000.000 VND</td>
+          <td>10</td>
+          <td><a href="">Sửa</a> / <a href="">Xóa</a></td>
         </tr>
         <tr>
           <td>1</td>
@@ -40,8 +54,9 @@
           <td><img src="countdown.png" alt="" width="170px"></td>
           <td>5000.000 VND</td>
           <td>10</td>
-          <td><a href="index.php?act=suasp">Sửa</a> / <a href="">Xóa</a></td>
+          <td><a href="">Sửa</a> / <a href="">Xóa</a></td>
         </tr>
+        <?php  endforeach ?>
       </table>
     </div>
   </div>
