@@ -17,7 +17,22 @@ include '../model/sanpham.php' ;
                 # code...
                 include"danhmuc/danhmuc.php";
                 break;
-            
+                case 'suadm' :
+                    if(isset($_GET['id'])){
+                        $dm = get1_dm($_GET['id']);
+                    }
+                    
+                    
+                case 'updm':
+                    if(isset($_POST['capnhat'])){
+                        $name = $_POST['tenloai'];
+                        $id = $_POST['id'];
+                        $sql = "UPDATE `danhmuc` SET `name` = '$name' WHERE `danhmuc`.`id` = '$id'";
+                        pdo_execute($sql);
+                        header("location: ?act=danhmuc");
+                    }
+                        include"danhmuc/suadm.php";
+                        break;
             case 'home':
                 # code...
                 include"home.php";
