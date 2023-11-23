@@ -41,22 +41,20 @@
         </tr>
         <?php foreach ($ds_sp as$key => $value ): ?>
         <tr>
-<<<<<<< HEAD
-          <td><?php echo $value['id']; ?></td>
-          <td><?php echo $value['name'];?></td>
-          <td><img src="<?php echo "../assets/img".$value['img'] ?>" alt="" width="170px"></td>
-          <td><?php echo $value['price'];?></td>
-          <td><?php echo $value['luotxem'];?></td>
-          <td><?php echo $value['iddm'];?></td>
-          <td><a href="">Sửa</a> / <a href="">Xóa</a></td>
-=======
           <td>1</td>
           <td>GHế sofa</td>
           <td><img src="countdown.png" alt="" width="170px"></td>
           <td>5000.000 VND</td>
           <td>10</td>
-          <td><a href="index.php?act=suasp">Sửa</a> / <a href="">Xóa</a></td>
->>>>>>> 929194a2a696d83b536fcb3bf4bcea30ac030442
+          <td><a href="">Sửa</a> / <a href="">Xóa</a></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>GHế sofa</td>
+          <td><img src="countdown.png" alt="" width="170px"></td>
+          <td>5000.000 VND</td>
+          <td>10</td>
+          <td><a href="">Sửa</a> / <a href="">Xóa</a></td>
         </tr>
         <?php  endforeach ?>
       </table>
