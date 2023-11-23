@@ -3,7 +3,7 @@
 <div class="content-wrapper">
     <div class="formdanhmuc">
       <h1>Thêm Danh Mục</h1>
-      <form action="#" method="POST" onsubmit="return kiemtradanhmuc();" >
+      <form action="#" method="POST" >
         <div class="formdanhmuc_input">
           <label for="">Mã Loại</label>
           <input type="text" >
