@@ -2,6 +2,8 @@
 include '../model/pdo.php';
 include '../model/danhmuc.php';
 include '../model/sanpham.php';
+include '../model/binhluan.php';
+include '../model/taikhoan.php';
 ?>
 <?php
 include "header.php";
@@ -91,13 +93,33 @@ if (isset($_GET['act'])) {
             break;
         
         case 'binhluan':
-            # code...
+            $ds_bl = ds_bl();
+
+            include "binhluan/binhluanj.php";
+            break;
+        case 'xoabl':
+            if(isset($_GET['id2']) && ($_GET['id2'] > 0)) {
+                $sql  = "delete from binhluan where id=" . $_GET['id2'];
+                pdo_execute($sql);
+            }
+            $ds_bl = ds_bl();
             include "binhluan/binhluanj.php";
             break;
         case 'taikhoan':
-            # code...
+            $ds_tk = ds_tk();
+
             include "taikhoan/taikhoan.php";
             break;
+
+        case 'xoatk':
+            if(isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $sql  = "delete from taikhoan where id=" . $_GET['id'];
+                pdo_execute($sql);
+            }
+            $ds_tk = ds_tk();
+            include "taikhoan/taikhoan.php";
+            break;
+
         case 'suasp':
             # code...
             include "sanpham/suasp.php";

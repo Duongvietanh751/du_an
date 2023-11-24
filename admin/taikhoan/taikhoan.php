@@ -2,6 +2,7 @@
     <div class="listdanhmuc">
       <h1>Danh sách tài khoản</h1>
       <table>
+      
         <tr>
           <th>ID</th>
           <th>Tên tài khoản</th>
@@ -9,39 +10,23 @@
           <th>Email</th>
           <th>Address</th>
           <th>Tel</th>
-          <th>Tol</th>
+          <th>Role</th>
           <th>Funtion</th>
         </tr>
+        <?php foreach($ds_tk as $key => $value):
+        extract($value);
+        $xoatk = "?act=xoatk&id=".$id; ?>
         <tr>
-          <td>1</td>
-          <td>vietanh</td>
-          <td>12345</td>
-          <td>Duongvietanh751@gmail.com</td>
-          <td>XUân la Tây hồ Ha Nội</td>
-          <td>0339634231</td>
-          <td>Chưa có</td>
-          <td><a href="">Xóa</a></td>
+          <td><?php echo $value['id'];?></td>
+          <td><?php echo $value['user'];?></td>
+          <td><?php echo $value['pass'];?></td>
+          <td><?php echo $value['email'];?></td>
+          <td><?php echo $value['address'];?></td>
+          <td><?php echo $value['tel'];?></td>
+          <td><?php echo $value['role'];?></td>
+          <td><a href="<?php echo "?act=xoatk&id=".$id;?>">Xóa</a></td>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>vietanh</td>
-          <td>12345</td>
-          <td>Duongvietanh751@gmail.com</td>
-          <td>XUân la Tây hồ Ha Nội</td>
-          <td>0339634231</td>
-          <td>Chưa có</td>
-          <td><a href="">Xóa</a></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>vietanh</td>
-          <td>12345</td>
-          <td>Duongvietanh751@gmail.com</td>
-          <td>XUân la Tây hồ Ha Nội</td>
-          <td>0339634231</td>
-          <td>Chưa có</td>
-          <td><a href="">Xóa</a></td>
-        </tr>
+        <?php endforeach ?>
       </table>
     </div>
   </div>
