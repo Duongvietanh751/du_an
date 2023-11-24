@@ -43,6 +43,7 @@ if (isset($_GET['act'])) {
         case 'sanpham':
             $ds_sp = ds_sp();
             if (isset($_POST['btnsub'])) {
+                
                 $name = $_POST['name_sanpham'];
                 $price = $_POST['price'];
                 $photo = null;
@@ -57,8 +58,38 @@ if (isset($_GET['act'])) {
 
             include "sanpham/sanpham.php";
             break;
+        case 'suasp':
+            if(isset($_GET['id'])){
+                $sp = get1_sp($_GET['id']);
+            }
+        case 'upsp':
+            if(isset($_POST['capnhat'])){
+            $id = $_POST['id'];
+            $name = $_POST['name_sanpham'];
+            $price = $_POST['price'];
+            $photo = null;
+            if ($_FILES['img']['name'] = "") {
+                $photo = $_FILES['img']['name'];
+                move_uploaded_file($_FILES['img']['tmp_name'], "../assets/img/$photo");
+            }
+            $mota = $_POST['desc'];
+            $danhmuc = $_POST['danhmuc'];
+            $sql = "UPDATE `sanpham` SET `name` = '$name',`price` = '$price', `img` = '$photo',`mota` ='$mota',`iddm`='$danhmuc' WHERE `sanpham`.`id` = $id;";
+            pdo_execute($sql);
+
+        }
+        include"sanpham/suasp.php";
+        break;
+
         case 'xoasp':
-            
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $sql  = "delete from sanpham where id=" . $_GET['id'];
+                pdo_execute($sql);
+            }
+            $ds_sp = ds_sp();
+            include "sanpham/sanpham.php";
+            break;
+        
         case 'binhluan':
             # code...
             include "binhluan/binhluanj.php";
