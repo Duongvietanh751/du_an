@@ -2,11 +2,7 @@
 <div class="content-wrapper">
     <div class="formdanhmuc">
       <h1>Thêm Sản Phẩm</h1>
-<<<<<<< HEAD
-      <form action=""  method=""  >
-=======
       <form action="#"  method="post" enctype="multipart/form-data" >
->>>>>>> 19123ec2bdeba50d935650c00ce3f2885f3f00ca
         <div class="formdanhmuc_input">
             <label for="">Tên sản phẩm</label>
             <input type="text" name="name_sanpham" id="tennd">
