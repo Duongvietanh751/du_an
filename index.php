@@ -66,6 +66,7 @@
                         $Email=$_POST['Email'];
                     }
                     if(!empty($error)){
+                    }else{
                         $email=$_POST['email'];
                         $user=$_POST['user'];
                         $pass=$_POST['pass'];
