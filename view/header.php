@@ -70,7 +70,7 @@
                                     <li><a href="index.php?act=cart">Cart</a></li>
                                     <li><a href="index.php?act=wishlist">Wishlist</a></li>
                                     <li><a href="index.php?act=checkout">Checkout</a></li>
-                                    <li><a href="index.php?act=account">My Account</a></li>
+                                    <li><a href="my-account.html">My Account</a></li>
                                     <li><a href="index.php?act=login">Login</a></li>
                                     <li><a href="index.php?act=register">Register</a></li>
                                 </ul>

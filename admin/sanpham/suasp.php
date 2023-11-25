@@ -1,7 +1,12 @@
 <div class="content-wrapper">
     <div class="formdanhmuc">
       <h1>Sửa Sản Phẩm</h1>
-      <form action=""  method=""  >
+      <form action="#" method="post" enctype="multipart/form-data"  >
+      <?php
+          if(is_array($sp)){
+            extract($sp);
+          }
+?>
         <div class="formdanhmuc_input">
             <label for="">Danh mục</label>
             <input type="text" name="danhmuc" id="" value="<?=$iddm ?>">

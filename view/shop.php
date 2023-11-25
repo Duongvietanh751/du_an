@@ -691,11 +691,11 @@
                 <!-- Page pagination Start -->
                 <div class="page-pagination">
                     <ul class="pagination justify-content-center">
-                        <li class="page-item"><a class="page-link" href="index.php?act=shop"><i class="fa fa-angle-left"></i></a></li>
-                        <li class="page-item"><a class="page-link" href="index.php?act=shop">1</a></li>
-                        <li class="page-item"><a class="page-link active" href="index.php?act=shop">2</a></li>
-                        <li class="page-item"><a class="page-link" href="index.php?act=shop">3</a></li>
-                        <li class="page-item"><a class="page-link" href="index.php?act=shop"><i class="fa fa-angle-right"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
                     </ul>
                 </div>
                 <!-- Page pagination End -->
