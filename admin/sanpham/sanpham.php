@@ -47,7 +47,7 @@
         <tr>
           <td><?php echo $value['id'] ?></td>
           <td><?php echo $value['name'] ?></td>
-          <td><img src="<?php echo "../assets/images/".$value['img'] ?>" alt="" width="170px"></td>
+          <td><img src="<?php echo "../view/assets/images/product/".$value['img'] ?>" width="170px"></td>
           <td><?php echo $value['price'] ?></td>
           <td><?php echo $value['luotxem'] ?></td>
           <td><?php echo $value['iddm'] ?></td>
