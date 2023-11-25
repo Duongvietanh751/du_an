@@ -10,27 +10,16 @@
           <th>Ngày bình luận</th>
           <th>Chức năng</th>
         </tr>
+      <?php foreach($ds_bl as $key => $value): ?>
         <tr>
-          <td>1</td>
-          <td>cả hai xe đã xảy ra va chạm tại ngã tư Nguyễn Văn Linh – Nguyễn Hữu Thọ</td>
-          <td>Dương Việt Anh</td>
-          <td>22/11/2023</td>
-          <td><a href="">Xóa</a></td>
+          <td><?php echo $value['id2']; ?></td>
+          <td><?php echo $value['noidung']; ?></td>
+          <td><?php echo $value['user']; ?></td>
+          <td><?php echo $value['ngaybinhluan']; ?></td>
+          <td><a href="<?php echo "?act=xoabl&id2=".$value['id2']; ?>">Xóa</a></td>
         </tr>
-        <tr>
-            <td>2</td>
-            <td>cả hai xe đã xảy ra va chạm tại ngã tư Nguyễn Văn Linh – Nguyễn Hữu Thọ</td>
-            <td>Dương Việt Anh</td>
-            <td>22/11/2023</td>
-            <td><a href="">Xóa</a></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>cả hai xe đã xảy ra va chạm tại ngã tư Nguyễn Văn Linh – Nguyễn Hữu Thọ</td>
-            <td>Dương Việt Anh</td>
-            <td>22/11/2023</td>
-            <td><a href="">Xóa</a></td>
-          </tr>
+        
+        <?php endforeach ?>
       </table>
     </div>
   </div>

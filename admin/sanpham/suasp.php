@@ -4,31 +4,28 @@
       <form action=""  method=""  >
         <div class="formdanhmuc_input">
             <label for="">Danh mục</label>
-            <select name="" id="">
-                <option value="">Tất cả</option>
-                <option value="">Ghế</option>
-                <option value="">Tủ</option>
-            </select>
+            <input type="text" name="danhmuc" id="" value="<?=$iddm ?>">
+            <input type="hidden" name="id" id="" value="<?=$id ?>">
         </div>
         <div class="formdanhmuc_input">
             <label for="">Tên sản phẩm</label>
-            <input type="text" name="name_sanpham" id="tennd">
+            <input type="text" name="name_sanpham" id="tennd" value="<?=$name ?>">
         </div>
         <div class="formdanhmuc_input">
             <label for="">Giá sản phẩm</label>
-            <input type="text" name="price">
+            <input type="text" name="price" value="<?=$price ?>">
         </div>
         <div class="formdanhmuc_input">
             <label for="">Hình Ảnh</label>
-            <input type="file" name="img">
+            <input type="file" name="img" value="<?=$img ?>">
         </div>
         <div class="formdanhmuc_input">
             <label for="">Mô tả</label>
-            <textarea name="desc"  cols="30" rows="10"></textarea>
+            <textarea name="desc"  cols="30" rows="10" value="<?=$mota ?>"></textarea>
         </div>
         <div id="thongbao" class="thongbao"></div>
         <div class="formdanhmuc_input">
-            <input type="submit" value="Cập Nhật">
+            <input type="submit" value="Cập Nhật" name="capnhat">
         </div>
       </form>
     </div>

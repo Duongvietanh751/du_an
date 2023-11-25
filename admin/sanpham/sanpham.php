@@ -39,15 +39,20 @@
             <th>Danh mục</th>
             <th>Chức năng</th>
         </tr>
-        <?php foreach ($ds_sp as $key => $value ): ?>
+        <?php foreach ($ds_sp as $key => $value ):
+         $suasp = "?act=suasp&id=".$value['id'];
+         $xoasp = "?act=xoasp&id=".$value['id'];
+          
+          ?>
         <tr>
           <td><?php echo $value['id'] ?></td>
           <td><?php echo $value['name'] ?></td>
-          <td><img src="<?php echo "assets/img/".$value['img'] ?>" alt="" width="170px"></td>
+          <td><img src="<?php echo "../assets/images/".$value['img'] ?>" alt="" width="170px"></td>
           <td><?php echo $value['price'] ?></td>
           <td><?php echo $value['luotxem'] ?></td>
           <td><?php echo $value['iddm'] ?></td>
-          <td><a href="">Sửa</a> / <a href="">Xóa</a></td>
+          <td><a href="<?php echo "?act=suasp&id=".$value['id']; ?>">Sửa</a> / 
+          <a href="<?php echo "?act=xoasp&id=".$value['id']; ?>">Xóa</a></td>
         </tr>
         <?php  endforeach ?>
       </table>
