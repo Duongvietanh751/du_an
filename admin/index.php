@@ -45,13 +45,12 @@ if (isset($_GET['act'])) {
         case 'sanpham':
             $ds_sp = ds_sp();
             if (isset($_POST['btnsub'])) {
-                
                 $name = $_POST['name_sanpham'];
                 $price = $_POST['price'];
                 $photo = null;
-                if ($_FILES['img']['name'] = "") {
+                if ($_FILES['img']['name'] != "") {
                     $photo = $_FILES['img']['name'];
-                    move_uploaded_file($_FILES['img']['tmp_name'], "../assets/img/$photo");
+                    move_uploaded_file($_FILES['img']['tmp_name'], "../view/assets/images/product/$photo");
                 }
                 $mota = $_POST['desc'];
                 $danhmuc = $_POST['danhmuc'];
@@ -70,9 +69,9 @@ if (isset($_GET['act'])) {
             $name = $_POST['name_sanpham'];
             $price = $_POST['price'];
             $photo = null;
-            if ($_FILES['img']['name'] = "") {
+            if ($_FILES['img']['name'] != "") {
                 $photo = $_FILES['img']['name'];
-                move_uploaded_file($_FILES['img']['tmp_name'], "../assets/img/$photo");
+                move_uploaded_file($_FILES['img']['tmp_name'], "../view/assets/images/product/$photo");
             }
             $mota = $_POST['desc'];
             $danhmuc = $_POST['danhmuc'];
