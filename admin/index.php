@@ -30,7 +30,7 @@ if (isset($_GET['act'])) {
                 $id = $_POST['id'];
                 $sql = "UPDATE `danhmuc` SET `name` = '$name' WHERE `danhmuc`.`id` = '$id'";
                 pdo_execute($sql);
-                $thongbao="Sữa thành công";
+                $thongbao="Sửa thành công";
             }
             include"danhmuc/danhmuc.php";
             break;
