@@ -1,7 +1,7 @@
 <div class="content-wrapper">
     <div class="formdanhmuc">
       <h1>Sửa Sản Phẩm</h1>
-     <form action="#" method="post" enctype="multipart/form-data"  >
+      <form action="#" method="post" enctype="multipart/form-data"  >
       <?php
           if(is_array($sp)){
             extract($sp);
