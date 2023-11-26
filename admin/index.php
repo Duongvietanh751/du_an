@@ -21,6 +21,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id'])) {
                 $dm = get1_dm($_GET['id']);
             }
+            break;
         case 'updm':
             if (isset($_POST['capnhat'])) {
                 $name = $_POST['tenloai'];
@@ -63,6 +64,7 @@ if (isset($_GET['act'])) {
             if(isset($_GET['id'])){
                 $sp = get1_sp($_GET['id']);
             }
+            break;
         case 'upsp':
             if(isset($_POST['capnhat'])){
             $id = $_POST['id'];
