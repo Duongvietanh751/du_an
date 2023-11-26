@@ -3,13 +3,13 @@
 <div class="content-wrapper">
     <div class="formdanhmuc">
       <h1>Thêm Danh Mục</h1>
-      <form action="#" method="POST" onsubmit="return kiemtradanhmuc();" >
+      <form action="index.php?act=danhmuc" method="POST" onsubmit="return kiemtradanhmuc();" >
         <div class="formdanhmuc_input">
           <label for="">Mã Loại</label>
-          <input type="text" >
+          <input type="text" name="maloai" >
         </div>
         <div class="formdanhmuc_input">
-          <label for="">Tên Loại</label>
+          <label for="">Danh mục</label>
           <input type="text" name="tenloai">
         </div>
         <div class="formdanhmuc_input">

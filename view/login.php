@@ -23,21 +23,19 @@
                     <!-- Login & Register Start -->
                     <div class="login-register-wrapper">
                         <h4 class="title">Login to Your Account</h4>
-                        <form action="#">
+                        <form action="index.php?act=login" method="post">
                             <div class="single-form">
-                                <input type="text" placeholder="Username or email *" />
+                                <input type="text" placeholder="Username" name="user" />
                             </div>
                             <div class="single-form">
-                                <input type="password" placeholder="Password" />
+                                <input type="password" placeholder="Password" name="pass" />
                             </div>
                             <div class="single-form">
                                 <input type="checkbox" id="remember" />
                                 <label for="remember"><span></span> Remember me</label>
                             </div>
                             <div class="single-form">
-                                <button class="btn btn-primary btn-hover-dark">
-                                    Login
-                                </button>
+                                <input type="submit" name="login" value="Login">
                             </div>
                         </form>
                         <p><a href="#">Lost your password?</a></p>

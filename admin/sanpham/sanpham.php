@@ -2,7 +2,18 @@
 <div class="content-wrapper">
     <div class="formdanhmuc">
       <h1>Thêm Sản Phẩm</h1>
-      <form action="#"  method="post" enctype="multipart/form-data" >
+      <form action="index.php?act=sanpham"  method="post" enctype="multipart/form-data">
+      <div class="formdanhmuc_input">
+            <label for="">Danh mục</label>
+            <select name="iddm">
+                            <?php
+                                foreach($ds_dm as $danhmucc){
+                                    extract($danhmucc);
+                                    echo'<option value="'.$id.'">'.$name.'</option>';
+                                }
+                            ?>
+                    </select>
+        </div>
         <div class="formdanhmuc_input">
             <label for="">Tên sản phẩm</label>
             <input type="text" name="name_sanpham" id="tennd">
@@ -18,10 +29,6 @@
         <div class="formdanhmuc_input">
             <label for="">Mô tả</label>
             <textarea name="desc"  cols="30" rows="10"></textarea>
-        </div>
-        <div class="formdanhmuc_input">
-            <label for="">Danh mục</label>
-            <input type="text" name="danhmuc">
         </div>
         <div id="thongbao" class="thongbao"></div>
         <input type="submit" class="button" name ="btnsub" value = "Thêm">
@@ -40,19 +47,18 @@
             <th>Chức năng</th>
         </tr>
         <?php foreach ($ds_sp as $key => $value ):
-         $suasp = "?act=suasp&id=".$value['id'];
-         $xoasp = "?act=xoasp&id=".$value['id'];
-          
+         $suasp = "index.php?act=suasp&id=".$value['id'];
+         $xoasp = "index.php?act=xoasp&id=".$value['id'];
           ?>
         <tr>
           <td><?php echo $value['id'] ?></td>
           <td><?php echo $value['name'] ?></td>
-          <td><img src="<?php echo "../view/assets/images/product/".$value['img'] ?>" width="170px"></td>
+          <td><img src="<?php echo "../upload/".$value['img'] ?>" width="170px"></td>
           <td><?php echo $value['price'] ?></td>
           <td><?php echo $value['luotxem'] ?></td>
           <td><?php echo $value['iddm'] ?></td>
-          <td><a href="<?php echo "?act=suasp&id=".$value['id']; ?>">Sửa</a> / 
-          <a href="<?php echo "?act=xoasp&id=".$value['id']; ?>">Xóa</a></td>
+          <td><a href="<?php echo "index.php?act=suasp&id=".$value['id']; ?>">Sửa</a> / 
+          <a href="<?php echo "index.php?act=xoasp&id=".$value['id']; ?>">Xóa</a></td>
         </tr>
         <?php  endforeach ?>
       </table>
