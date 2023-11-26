@@ -13,7 +13,7 @@ if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
         case 'danhmuc':
-            $ds_dm = ds_dm();
+            
             if (isset($_POST['btnsub'])) {
                 add_dm($_POST['tenloai']);
             }

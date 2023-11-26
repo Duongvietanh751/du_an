@@ -4,11 +4,12 @@
     include"model/pdo.php";
     include"model/taikhoan.php";
     include"view/header.php";
+    include"model/danhmuc.php";
     if((isset($_GET['act'])) && ($_GET['act']!="")){
         $act=$_GET['act'];
         switch ($act) {
             case 'shop':
-                # code...
+                $ds_dm = ds_dm();
                 include"view/shop.php";
                 break;
             case 'contact':

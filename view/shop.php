@@ -44,9 +44,9 @@
                     <div class="shop-sort">
                         <span class="title">Sort By :</span>
                         <select class="select2-2">
-                            <option value="featured">Featured</option>
-                            <option value="rating">Rating</option>
-                            <option value="price">Price</option>
+                        <?php foreach($ds_dm as $key => $value ): extract($value); ?>
+                            <option><a href=""><?php echo $value['name'];?></a></option>
+                        <?php  endforeach ?>
                         </select>
                     </div>
                 </div>
