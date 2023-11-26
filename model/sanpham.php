@@ -6,13 +6,15 @@
    }
    function add_sp($name,$price,$photo,$mota,$danhmuc){
       $sql = "insert into sanpham(`name`,`price`,`img`,`mota`,`iddm`) VALUES ('$name','$price','$photo','$mota','$danhmuc')";
-      $result =pdo_execute($sql);
-      return $result;
+      pdo_execute($sql);
    }
-    
    function get1_sp($id){
       $sql = "select * from sanpham where id = '$id'";
       $result = pdo_query_one($sql);
       return $result;
    }
+   function delete_sanpham($id){
+      $sql="DELETE FROM sanpham WHERE id=".$id;
+      pdo_execute($sql);
+  }
 ?>

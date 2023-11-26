@@ -25,49 +25,36 @@
                         <h4 class="title">Create New Account</h4>
                         <p>
                             Already have an account?
-                            <a href="login.html">Log in instead!</a>
+                            <a href="index.php?act=login">Log in instead!</a>
                         </p>
-                        <form action="#">
+                        <form action="index.php?act=register" method="post">
                             <div class="single-form">
-                                <input type="text" placeholder="First Name" />
+                                <input type="text" placeholder="Email Address *" name="email" value="<?php if(isset($Email)) echo $Email ?>">
+                                <p class="error"><?php if(isset($error['email'])) echo $error['email'] ?></p>
+
                             </div>
                             <div class="single-form">
-                                <input type="text" placeholder="Last Name" />
+                                <input type="text" placeholder="Username *" name="user" value="<?php if(isset($user)) echo $user ?>">
+                                <p class="error"><?php if(isset($error['user'])) echo $error['user'] ?></p>
+
                             </div>
                             <div class="single-form">
-                                <input type="text" placeholder="Email Address *" />
+                                <input type="password" placeholder="Password" name="pass" value="<?php if(isset($pass)) echo $pass ?>">
+                                <p class="error"><?php if(isset($error['pass'])) echo $error['pass'] ?></p>
+
                             </div>
                             <div class="single-form">
-                                <input type="text" placeholder="Username *" />
-                            </div>
-                            <div class="single-form">
-                                <input type="password" placeholder="Password" />
-                            </div>
-                            <div class="single-form">
-                                <input type="password" placeholder="Confirm Password" />
-                            </div>
-                            <div class="single-form">
-                                <input type="checkbox" id="receive" />
-                                <label for="receive">
-                                    <span></span> Receive Offers From Our
-                                    Partners</label>
-                            </div>
-                            <div class="single-form">
-                                <input type="checkbox" id="newsletter" />
-                                <label for="newsletter">
-                                    <span></span> Sign Up For Our Newsletter
-                                    <br />
-                                        Subscribe To Our Newsletters Now And
-                                        Stay Up-To-Date With New Collections,
-                                        The Latest Lookbooks And Exclusive
-                                        Offers.</label>
-                            </div>
-                            <div class="single-form">
-                                <button class="btn btn-primary btn-hover-dark">
-                                    Register
-                                </button>
+                                <input type="submit" name="dangky" value="Register">
                             </div>
                         </form>
+                        <span class="thongbao">
+                                <?php
+                                if(isset($thongbao)&&($thongbao!="")){
+                                    echo $thongbao;
+                                    echo ' <a href="index.php?act=login">Log in instead!</a>';
+                                }
+                                ?>
+                        </span>
                     </div>
                     <!-- Login & Register End -->
                 </div>

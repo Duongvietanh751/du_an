@@ -1,11 +1,13 @@
+
 <?php
+    session_start();
+    ob_start();
+    if(isset($_SESSION['role'])&&($_SESSION['role']==1)){
 include '../model/pdo.php';
 include '../model/danhmuc.php';
 include '../model/sanpham.php';
 include '../model/binhluan.php';
 include '../model/taikhoan.php';
-?>
-<?php
 include "header.php";
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
@@ -15,21 +17,22 @@ if (isset($_GET['act'])) {
             if (isset($_POST['btnsub'])) {
                 add_dm($_POST['tenloai']);
             }
-            include "danhmuc/danhmuc.php";
+            $ds_dm = ds_dm();
+            include"danhmuc/danhmuc.php";
             break;
         case 'suadm':
             if (isset($_GET['id'])) {
                 $dm = get1_dm($_GET['id']);
             }
-            break;
         case 'updm':
             if (isset($_POST['capnhat'])) {
                 $name = $_POST['tenloai'];
                 $id = $_POST['id'];
                 $sql = "UPDATE `danhmuc` SET `name` = '$name' WHERE `danhmuc`.`id` = '$id'";
                 pdo_execute($sql);
+                $thongbao="Sữa thành công";
             }
-            include "danhmuc/suadm.php";
+            include"danhmuc/danhmuc.php";
             break;
         case 'xoadm':
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
@@ -37,28 +40,27 @@ if (isset($_GET['act'])) {
                 pdo_execute($sql);
             }
             $ds_dm = ds_dm();
-            include "danhmuc/danhmuc.php";
+            include"danhmuc/danhmuc.php";
             break;
         case 'home':
             # code...
             include "home.php";
             break;
         case 'sanpham':
-            $ds_sp = ds_sp();
-            if (isset($_POST['btnsub'])) {
-                $name = $_POST['name_sanpham'];
-                $price = $_POST['price'];
-                $photo = null;
-                if ($_FILES['img']['name'] != "") {
-                    $photo = $_FILES['img']['name'];
-                    move_uploaded_file($_FILES['img']['tmp_name'], "../view/assets/images/product/$photo");
-                }
+            if (isset($_POST['btnsub']) && ($_POST['btnsub'])){
+                $danhmuc=$_POST['iddm'];
+                $name=$_POST['name_sanpham'];
+                $price=$_POST['price'];
+                $photo=$_FILES['img']['name'];
+                $target_dir="../upload/";
+                $target_file=$target_dir.basename($_FILES['img']['name']);
+                move_uploaded_file($_FILES['img']['tmp_name'],$target_file);
                 $mota = $_POST['desc'];
-                $danhmuc = $_POST['danhmuc'];
                 add_sp($name, $price, $photo, $mota, $danhmuc);
             }
-
-            include "sanpham/sanpham.php";
+            $ds_dm = ds_dm();
+            $ds_sp = ds_sp();
+            include"sanpham/sanpham.php";
             break;
         case 'suasp':
             if(isset($_GET['id'])){
@@ -67,13 +69,12 @@ if (isset($_GET['act'])) {
             break;
         case 'upsp':
             if(isset($_POST['capnhat'])){
-            $id = $_POST['id'];
             $name = $_POST['name_sanpham'];
             $price = $_POST['price'];
             $photo = null;
             if ($_FILES['img']['name'] != "") {
                 $photo = $_FILES['img']['name'];
-                move_uploaded_file($_FILES['img']['tmp_name'], "../view/assets/images/product/$photo");
+                move_uploaded_file($_FILES['img']['tmp_name'], "../upload/$photo");
             }
             $mota = $_POST['desc'];
             $danhmuc = $_POST['danhmuc'];
@@ -90,7 +91,7 @@ if (isset($_GET['act'])) {
                 pdo_execute($sql);
             }
             $ds_sp = ds_sp();
-            include "sanpham/sanpham.php";
+            include"sanpham/sanpham.php";
             break;
         
         case 'binhluan':
@@ -104,7 +105,7 @@ if (isset($_GET['act'])) {
                 pdo_execute($sql);
             }
             $ds_bl = ds_bl();
-            include "binhluan/binhluanj.php";
+            include"binhluan/binhluanj.php";
             break;
         case 'taikhoan':
             $ds_tk = ds_tk();
@@ -118,17 +119,12 @@ if (isset($_GET['act'])) {
                 pdo_execute($sql);
             }
             $ds_tk = ds_tk();
-            include "taikhoan/taikhoan.php";
+            include"taikhoan/taikhoan.php";
             break;
-
-        case 'suasp':
-            # code...
-            include "sanpham/suasp.php";
-            break;
-        case 'suadm':
-            # code...
-            include "danhmuc/suadm.php";
-            break;
+        case 'dangxuat':
+                unset($_SESSION['role']);
+                header('location:loginadmin.php');
+                break;
         default:
             include "home.php";
             break;
@@ -137,4 +133,7 @@ if (isset($_GET['act'])) {
     include "home.php";
 }
 include "footer.php";
+    }else{
+        header('location:loginadmin.php');
+    }
 ?>

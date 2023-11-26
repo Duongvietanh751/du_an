@@ -99,7 +99,7 @@
             <a href="index.php?act=phanquyen" class="nav-link">Phân quyền</a>
           </li>
           <li class ="nav-item">
-            <a href="" class="nav-link">Đăng xuất</a>
+            <a href="index.php?act=dangxuat" class="nav-link">Đăng xuất</a>
           </li>
         </ul>
       </nav>
