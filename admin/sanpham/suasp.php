@@ -8,11 +8,6 @@
           }
 ?>
         <div class="formdanhmuc_input">
-            <label for="">Danh mục</label>
-            <input type="text" name="danhmuc" id="" value="<?=$iddm ?>">
-            <input type="hidden" name="id" id="" value="<?=$id ?>">
-        </div>
-        <div class="formdanhmuc_input">
             <label for="">Tên sản phẩm</label>
             <input type="text" name="name_sanpham" id="tennd" value="<?=$name ?>">
         </div>

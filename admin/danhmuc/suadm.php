@@ -23,6 +23,11 @@
         <div class="formdanhmuc_input">
             <input type="submit" value="Cập Nhật" name ="capnhat">
         </div>
+        <div class="formdanhmuc_input">
+        <?php
+                        if(isset($thongbao)&&($thongbao!=""))  echo $thongbao;
+                    ?>
+        </div>
       </form>
     </div>
   </div>
