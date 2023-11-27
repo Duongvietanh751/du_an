@@ -93,10 +93,10 @@
                             <div class="dropdown-menu dropdown-search">
                                 <!-- Header Search Start -->
                                 <div class="header-search">
-                                    <form action="#">
-                                        <input type="text" placeholder="Enter your search key ... " />
+                                    <form action="index.php?act=shop" method="post" >
+                                        <input type="text" placeholder="Enter your search key ... " name="keyw" />
                                         <button>
-                                            <i class="pe-7s-search"></i>
+                                            <i class="pe-7s-search"><button type="submit" name="search"></i>
                                         </button>
                                     </form>
                                 </div>
