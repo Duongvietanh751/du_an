@@ -124,10 +124,10 @@
                         </div>
                         <a class="action" href="index.php?act=cart"><i class="pe-7s-like"></i></a>
                         <div class="dropdown">
-                            <a class="action" href="index.php?act=listcart" role="button" data-bs-toggle="dropdown">
+                            <a class="action" href="index.php?act=cart" role="button" data-bs-toggle="dropdown">
                                 <i class="pe-7s-shopbag"></i>
                                 <span id="totalProduct" class="number">
-                                    <?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?>
+                                    <?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : -1 ?>
                                 </span>
                             </a>
                             <div class="dropdown-menu dropdown-cart">

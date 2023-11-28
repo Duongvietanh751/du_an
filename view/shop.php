@@ -104,9 +104,9 @@
                                             <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
                                         </li>
                                         <li>
-                                            <button data-id="<?=$id?>" class="action" onclick="addToCart(<?=$id?>,'<?=$name?>',<?=$price?>)">
+                                        <button data-id="<?=$value['id']?>" class="action" onclick="addToCart(<?=$value['id']?>,'<?=$value['name']?>',<?=$value['price']?>)">
                                                 <i class="pe-7s-shopbag"></i>
-                                            </button>
+                                        </button>
                                         </li>
                                         <li>
                                             <a class="action" href="#"><i class="pe-7s-like"></i></a>
