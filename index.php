@@ -12,14 +12,17 @@
             case 'shop':
                 $ds_sp = ds_sp();
                 $ds_dm = ds_dm();
-                include"view/shop.php";
+                include "view/shop.php";
                 break;
-            case 'catepro':
-                if(isset($_GET['iddm']) && ($_GET['iddm']) >0){
+            case 'shdm':
+                if (isset($_GET['iddm']) && $_GET['iddm'] > 0) {
                     $iddm = $_GET['iddm'];
                     $sp_dm = sp_dm($iddm);
-                 }
-                include"view/shop.php";
+                }if($_GET['iddm'] == 41){
+                    header("location: index.php?act=shop");
+                }
+                $ds_dm = ds_dm();
+                include"view/shdm.php";
                 break;
 
             case 'contact':
@@ -130,7 +133,6 @@
         $ds_sptab1 = ds_sptab1();
         $ds_sptab2 = ds_sptab2();
         $ds_sptab3 = ds_sptab3();
-        
         include"view/home.php";
     }
     include"view/footer.php";
