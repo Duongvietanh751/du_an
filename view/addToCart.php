@@ -1,12 +1,11 @@
 <?php
-session_start();
+    session_start();
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         // Lấy dữ liệu từ ajax đẩy lên
         $productId = $_POST['id'];
         $productName = $_POST['name'];
         $productPrice = $_POST['price'];
-
         // Kiểm tra sản phẩm đã có trong giỏ hàng chưa
         $index = array_search($productId, array_column($_SESSION['cart'], 'id'));
         // array_column() trích xuất một cột từ mảng giỏ hàng và trả về một mảng chứ giá trị của cột id

@@ -30,21 +30,8 @@
                 # code...
                 include"view/blog.php";
                 break;
-            case 'cart':
-                if (!empty($_SESSION['cart'])) {
-                    $cart = $_SESSION['cart'];
-    
-                    // Tạo mảng chứa ID các sản phẩm trong giỏ hàng
-                    $productId = array_column($cart, 'id');
-                    
-                    // Chuyển đôi mảng id thành một cuỗi để thực hiện truy vấn
-                    $idList = implode(',', $productId);
-                    
-                    // Lấy sản phẩm trong bảng sản phẩm theo id
-                    $dataDb = loadone_sanphamCart($idList);
-                    // var_dump($dataDb);
-                }
-                include"view/cart.php";
+            case 'listcart':
+                include"view/";
                 break;
             case 'wishlist':
                 # code...
