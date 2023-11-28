@@ -239,10 +239,12 @@
                                                                 <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
                                                             </li>
                                                             <li>
-                                                                <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
+                                                            <button data-id="<?=$id?>" class="action" onclick="addToCart(<?=$id?>,'<?=$name?>',<?=$price?>)">
+                                                                <i class="pe-7s-shopbag"></i>
+                                                            </button>
                                                             </li>
                                                             <li>
-                                                                <a class="action" href="#"><i class="pe-7s-like"></i></a>
+                                                                <a class="action" href="#"><i class="pe-7s-like" data-id="<?=$id?>" class="action" onclick="addToCart(<?=$id?>,'<?=$name?>',<?=$price?>)"></i></a>
                                                             </li>
                                                         </ul>
                                                     </div>

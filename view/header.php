@@ -107,25 +107,27 @@
                         <div class="dropdown">
                             <a class="action" href="#" role="button" data-bs-toggle="dropdown"><i class="pe-7s-user"></i></a>
                             <ul class="dropdown-menu dropdown-profile">
-                            <?php if(isset($_SESSION['user'])&&($_SESSION['user']!="")){
-                                echo '<li><a href="index.php?act=checkout">Hello:'.$_SESSION['user'].'</a></li>';
-                            }else{
+                            <?php
+                                if(isset($_SESSION['user'])){
+                                extract($_SESSION['user']);
                             ?>
-                                <li><a href="index.php?act=login">Sign In</a></li>
-                            <?php }?>
+                            <li><a href="index.php?act=login">Hello :<?=$user?></a></li>
                             <li><a href="index.php?act=account">My Account</a></li>
                             <li><a href="index.php?act=checkout">Checkout</a></li>
                             <li><a href="index.php?act=logout">Logout</a></li>
-
+                            <?php
+                            }else{
+                            ?>
+                            <li><a href="index.php?act=login">Sign In</a></li>
+                            <?php } ?>
                             </ul>
                         </div>
-                        <a class="action" href="index.php?act=wishlist"><i class="pe-7s-like"></i></a>
+                        <a class="action" href="index.php?act=cart"><i class="pe-7s-like"></i></a>
                         <div class="dropdown">
-                            <a class="action" href="#" role="button" data-bs-toggle="dropdown">
+                            <a class="action" href="index.php?act=cart" role="button" data-bs-toggle="dropdown">
                                 <i class="pe-7s-shopbag"></i>
-                                <span class="number">4</span>
+                                <span id="totalProduct" class="number"><?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?></span>
                             </a>
-
                             <div class="dropdown-menu dropdown-cart">
                                 <div class="cart-content" id="cart-content">
                                     <ul>

@@ -3,9 +3,10 @@
     ob_start();
     include"model/pdo.php";
     include"model/taikhoan.php";
-    include"view/header.php";
     include"model/sanpham.php";
     include"model/danhmuc.php";
+    include"global.php";
+    include"view/header.php";
     if((isset($_GET['act'])) && ($_GET['act']!="")){
         $act=$_GET['act'];
         switch ($act) {
@@ -18,10 +19,9 @@
                 if(isset($_GET['iddm']) && ($_GET['iddm']) >0){
                     $iddm = $_GET['iddm'];
                     $sp_dm = sp_dm($iddm);
-                 }
+                }
                 include"view/shop.php";
                 break;
-
             case 'contact':
                     # code...
                     include"view/contact.php";
@@ -31,7 +31,19 @@
                 include"view/blog.php";
                 break;
             case 'cart':
-                # code...
+                if (!empty($_SESSION['cart'])) {
+                    $cart = $_SESSION['cart'];
+    
+                    // Tạo mảng chứa ID các sản phẩm trong giỏ hàng
+                    $productId = array_column($cart, 'id');
+                    
+                    // Chuyển đôi mảng id thành một cuỗi để thực hiện truy vấn
+                    $idList = implode(',', $productId);
+                    
+                    // Lấy sản phẩm trong bảng sản phẩm theo id
+                    $dataDb = loadone_sanphamCart($idList);
+                    // var_dump($dataDb);
+                }
                 include"view/cart.php";
                 break;
             case 'wishlist':
@@ -44,20 +56,16 @@
                 break;
             case 'login':
                 if(isset($_POST['login']) && ($_POST['login'])){
-                    $user=$_POST['user'];
-                    $pass=$_POST['pass'];
-                    $result=getuser($user,$pass);
-                    $role=$result[0]['role'];
-                    if($result[0]['role']==1){
-                        $_SESSION['role']=$result;
-                        header('location:admin/index.php');
-                    }else{
-                        $_SESSION['role']=$role;
-                        $_SESSION['id']=$result[0]['id'];
-                        $_SESSION['user']=$result[0]['user'];
-                        $thongbao="sai tài khoản hoặc mật khẩu";
-                        header('location:index.php');
-                        break;
+                    $user = $_POST['user'];
+                    $pass = $_POST['pass'];
+                    $checkuser = getuser($user, $pass);
+                    if (is_array($checkuser)) {
+                        $_SESSION['user'] = $checkuser;
+                        $_SESSION['pass'] = $checkuser;
+                        header('Location: index.php');
+                        // $thongbao="bạn đã đăng nhập thành công ";
+                    } else {
+                        $thongbao = "tài khoản không tồn tại. Vui lòng đăng ký";
                     }
                 }
                 include"view/login.php";
