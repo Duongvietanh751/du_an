@@ -175,7 +175,7 @@
                         <div class="product-top-wrapper">
                             <!-- Section Title Start -->
                             <div class="section-title order-md-1">
-                                <h2 class="title"># New Products</h2>
+                                <h2 class="title">SẢN PHẨM MỚI</h2>
                             </div>
                             <!-- Section Title End -->
 
@@ -423,7 +423,7 @@
                         <div class="product-top-wrapper">
                             <!-- Section Title Start -->
                             <div class="section-title order-md-1">
-                                <h2 class="title"># Best Sellers</h2>
+                                <h2 class="title">SẢN PHẨM BÁN CHẠY</h2>
                             </div>
                             <!-- Section Title End -->
 

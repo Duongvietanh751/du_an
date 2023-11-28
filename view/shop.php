@@ -73,7 +73,7 @@
                                                 <a href="index.php?act=product&idsp=<?php echo $value['id']; ?>"><?php echo $value['name'] ?></a>
                                             </h4>
                                             <div class="price">
-                                                <span class="sale-price"><?php echo $value['price'];?></span>
+                                                <span class="sale-price"><?php echo "$". $value['price'];?></span>
                                             </div>
                                         </div>
                                         <ul class="product-meta">
