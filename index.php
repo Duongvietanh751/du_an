@@ -7,6 +7,8 @@
     include"model/danhmuc.php";
     include"global.php";
     include"view/header.php";
+    include"model/binhluan.php";
+
     if((isset($_GET['act'])) && ($_GET['act']!="")){
         $act=$_GET['act'];
         switch ($act) {
