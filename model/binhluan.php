@@ -1,6 +1,6 @@
 <?php
     function ds_bl(){
-        $sql = "select taikhoan.id as id2, binhluan.noidung, taikhoan.user, binhluan.ngaybinhluan 
+        $sql = "select binhluan.id, taikhoan.id as id2, binhluan.noidung, taikhoan.user, binhluan.ngaybinhluan 
         from sanpham 
         join binhluan on binhluan.idpro=sanpham.id
         join taikhoan on binhluan.iduser=taikhoan.id";

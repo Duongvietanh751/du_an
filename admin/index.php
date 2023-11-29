@@ -100,8 +100,8 @@ if (isset($_GET['act'])) {
             include "binhluan/binhluanj.php";
             break;
         case 'xoabl':
-            if(isset($_GET['id2']) && ($_GET['id2'] > 0)) {
-                $sql  = "delete from binhluan where id=" . $_GET['id2'];
+            if(isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $sql  = "delete from binhluan where id=" . $_GET['id'];
                 pdo_execute($sql);
             }
             $ds_bl = ds_bl();

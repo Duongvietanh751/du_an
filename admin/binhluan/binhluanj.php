@@ -12,11 +12,11 @@
         </tr>
       <?php foreach($ds_bl as $key => $value): ?>
         <tr>
-          <td><?php echo $value['id2']; ?></td>
+          <td><?php echo $value['id']; ?></td>
           <td><?php echo $value['noidung']; ?></td>
           <td><?php echo $value['user']; ?></td>
           <td><?php echo $value['ngaybinhluan']; ?></td>
-          <td><a href="<?php echo "?act=xoabl&id2=".$value['id2']; ?>">Xóa</a></td>
+          <td><a href="<?php echo "?act=xoabl&id=".$value['id']; ?>">Xóa</a></td>
         </tr>
         
         <?php endforeach ?>
