@@ -127,7 +127,7 @@
                             <a class="action" href="index.php?act=cart" role="button" data-bs-toggle="dropdown">
                                 <i class="pe-7s-shopbag"></i>
                                 <span id="totalProduct" class="number">
-                                    <?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : -1 ?>
+                                    <?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?>
                                 </span>
                             </a>
                             <div class="dropdown-menu dropdown-cart">
