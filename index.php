@@ -119,6 +119,7 @@
                 if(isset($_GET['idsp']) && ($_GET['idsp']) > 0 ){
                     $ctsp = get1_sp($_GET['idsp']);
                     $kh_bl = kh_bl($_GET['idsp']);
+                    $ds_bl = ds_bl();
                 }
                 include"view/product.php";
                 break;

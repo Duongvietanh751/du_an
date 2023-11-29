@@ -1,3 +1,6 @@
+<?php
+    
+?>
 <!-- Page Banner Section Start -->
  <div class="section page-banner-section" style="background-image: url(view/assets/images/page-banner.jpg)">
      <div class="container">
@@ -282,26 +285,22 @@
                          <div class="reviews-comment">
                              <!-- Single Comment Start  -->
                              <div class="single-reviews">
-                                <?php  foreach($kh_bl as $key => $value): extract($value);?>
+                                <?php  foreach($kh_bl as $key => $value):?>
                                  <div class="comment-content">
                                      <div class="author-name-rating">
-                                         <h6 class="name"><?php echo $user ?></h6>
+                                         <h6 class="name"><?php echo $value['user'] ?></h6>
                                          <div class="review-star">
                                              <div class="star" style="width: 80%"></div>
                                          </div>
                                      </div>
-                                     <span class="date"><?php echo $ngaybinhluan ?></span>
+                                     <span class="date"><?php echo $value['ngaybinhluan'] ?></span>
                                      <p>
-                                     <?php echo $noidung ?>
+                                     <?php echo $value['noidung'] ?>
                                      </p>
                                  </div>
                                  <?php endforeach ?>
                              </div>
-
-                         </div>
-                         <!-- Review Comment End  -->
-
-                         <!-- Review Form Start  -->
+                         </div>     
                          <div class="reviews-form">
                              <h3 class="reviews-title">Add a review</h3>
                              <form action="" method="POST">
@@ -313,11 +312,18 @@
                                      </div>
                                      <div class="col-md-12">
                                          <div class="single-form">
-                                             <input type="hidden" name="idpro" value="<?=$id ?>">
-                                             <input type="hidden" name="iduser" value="<?=$iduser ?>">
+                                            <?php
+                                            if(is_array($value)){
+                                                extract($value);
+                                            }
+
+?>
+                                             <input type="hidden" name="idpro" value="<?=$id ?>">                                        
+                                             <input type="hidden" name="iduser" value="<?=$iduser ?>">                                        
                                              <input class="btn btn-dark btn-hover-primary" type="submit" name="guibinhluan" value="Gửi bình luận">
                              </form>
                                             <?php
+                                               
                                                 if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])) {
                                                     $noidung = $_POST['noidung'];
                                                     $idsp = $_POST['idpro'];
