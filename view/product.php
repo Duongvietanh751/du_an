@@ -1,4 +1,4 @@
- <!-- Page Banner Section Start -->
+<!-- Page Banner Section Start -->
  <div class="section page-banner-section" style="background-image: url(view/assets/images/page-banner.jpg)">
      <div class="container">
          <!-- Page Banner Content End -->
@@ -282,24 +282,20 @@
                          <div class="reviews-comment">
                              <!-- Single Comment Start  -->
                              <div class="single-reviews">
-
+                                <?php  foreach($kh_bl as $key => $value): extract($value);?>
                                  <div class="comment-content">
                                      <div class="author-name-rating">
-                                         <h6 class="name">Rosie Silva</h6>
+                                         <h6 class="name"><?php echo $user ?></h6>
                                          <div class="review-star">
                                              <div class="star" style="width: 80%"></div>
                                          </div>
                                      </div>
-                                     <span class="date">11/20/2023</span>
+                                     <span class="date"><?php echo $ngaybinhluan ?></span>
                                      <p>
-                                         Lorem ipsum dolor sit amet consectetur
-                                         adipisicing elit. Esse deleniti itaque
-                                         velit explicabo at eum incidunt vel
-                                         reprehenderit maxime eos facere ut
-                                         pariatur voluptas aut, porro quia
-                                         molestias sequi cupiditate!
+                                     <?php echo $noidung ?>
                                      </p>
                                  </div>
+                                 <?php endforeach ?>
                              </div>
 
                          </div>
@@ -308,58 +304,41 @@
                          <!-- Review Form Start  -->
                          <div class="reviews-form">
                              <h3 class="reviews-title">Add a review</h3>
-
-                             <form action="#">
+                             <form action="" method="POST">
                                  <div class="row">
-
                                      <div class="col-md-12">
-                                         <div class="review-rating">
-                                             <label class="title">Rating:</label>
-                                             <ul id="rating" class="rating">
-                                                 <li class="star" title="Poor" data-value="1">
-                                                     <i class="fa fa-star-o"></i>
-                                                 </li>
-                                                 <li class="star" title="Poor" data-value="2">
-                                                     <i class="fa fa-star-o"></i>
-                                                 </li>
-                                                 <li class="star" title="Poor" data-value="3">
-                                                     <i class="fa fa-star-o"></i>
-                                                 </li>
-                                                 <li class="star" title="Poor" data-value="4">
-                                                     <i class="fa fa-star-o"></i>
-                                                 </li>
-                                                 <li class="star" title="Poor" data-value="5">
-                                                     <i class="fa fa-star-o"></i>
-                                                 </li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-12">
-                                     <form action="?act=ctsp" method="POST">
                                          <div class="single-form">
-                                             <input type="text" placeholder="Write your comments here"></input>
+                                             <input type="text" name="noidung" placeholder="Write your comments here"></input>
                                          </div>
                                      </div>
                                      <div class="col-md-12">
                                          <div class="single-form">
-                                                 <input type="hidden" name="idpro" value="<?= $id ?>">
-                                                 <input type="hidden" name="iduser" value="<?= $iduser ?>">
-                                                 
-                                                 <input class="btn btn-dark btn-hover-primary" type="submit" name="guibinhluan" value="Gửi bình luận">
-                                             </form>
-                                         </div>
-                                     </div>
-                                 </div>
+                                             <input type="hidden" name="idpro" value="<?=$id ?>">
+                                             <input type="hidden" name="iduser" value="<?=$iduser ?>">
+                                             <input class="btn btn-dark btn-hover-primary" type="submit" name="guibinhluan" value="Gửi bình luận">
                              </form>
+                                            <?php
+                                                if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])) {
+                                                    $noidung = $_POST['noidung'];
+                                                    $idsp = $_POST['idpro'];
+                                                    $iduser = $_SESSION['user']['id'];
+                                                    $date = date('h:i:a d/m/y');
+                                                    sent_bl($idsp, $iduser, $noidung, $date);
+                                                }
+                                                ?>
                          </div>
-                         <!-- Review Form End  -->
                      </div>
-                     <!-- Reviews Content End -->
                  </div>
+                 </form>
              </div>
+             <!-- Review Form End  -->
          </div>
-         <!-- Product Details Tabs End -->
+         <!-- Reviews Content End -->
      </div>
+ </div>
+ </div>
+ <!-- Product Details Tabs End -->
+ </div>
  </div>
  <!-- Product Details tab Section End -->
 

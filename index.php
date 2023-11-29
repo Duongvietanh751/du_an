@@ -6,6 +6,7 @@
     include"view/header.php";
     include"model/sanpham.php";
     include"model/danhmuc.php";
+    include"model/binhluan.php";
     if((isset($_GET['act'])) && ($_GET['act']!="")){
         $act=$_GET['act'];
         switch ($act) {
@@ -116,10 +117,8 @@
                 break;
             case 'product':
                 if(isset($_GET['idsp']) && ($_GET['idsp']) > 0 ){
-                    $id = $_GET['idsp'];
                     $ctsp = get1_sp($_GET['idsp']);
-                    extract($ctsp);
-                    $related = rela_pro($id,$iddm);
+                    $kh_bl = kh_bl($_GET['idsp']);
                 }
                 include"view/product.php";
                 break;
