@@ -18,6 +18,11 @@
                 include "view/shop.php";
                 break;
             case 'shdm':
+                if(isset($_POST['keyw'])&& $_POST['keyw'] != ""){
+                    $keyw = $_POST['keyw'];
+                }else{
+                    $keyw = "";
+                }
                 if (isset($_GET['iddm']) && $_GET['iddm'] > 0) {
                     $iddm = $_GET['iddm'];
                     $sp_dm = sp_dm($iddm);
@@ -128,7 +133,8 @@
                 if(isset($_GET['idsp']) && ($_GET['idsp']) > 0 ){
                     $ctsp = get1_sp($_GET['idsp']);
                     $kh_bl = kh_bl($_GET['idsp']);
-                    $ds_bl = ds_bl();
+                    
+                  
                 }
                 include"view/product.php";
                 break;

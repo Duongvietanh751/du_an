@@ -39,7 +39,7 @@
                                         ?>
                                         <img src="<?php echo "upload/" . $img; ?>" width="570" height="604" alt="Product Image" />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                                     <div class="swiper-slide">
                                         <img src="<?php echo "upload/" . $img; ?>" width="88" height="93" alt="Product Thumbnail" />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <!-- Add Arrows -->
@@ -188,20 +188,18 @@
             <ul class="nav justify-content-center">
                 <li>
                     <button data-bs-toggle="tab" data-bs-target="#reviews">
-                        Reviews (03)
+                        Reviews: 
                     </button>
                 </li>
             </ul>
-
             <div class="tab-content">
                 <div class="tab-pane fade" id="reviews">
                     <!-- Reviews Content Start -->
                     <div class="reviews-content">
                         <!-- Review Comment Start  -->
                         <div class="reviews-comment">
-                        <?php foreach ($kh_bl as $key => $value) : ?>
-                            <div class="single-reviews">
-                                
+                            <?php foreach ($kh_bl as $key => $value) : ?>
+                                <div class="single-reviews">
                                     <div class="comment-content">
                                         <div class="author-name-rating">
                                             <h6 class="name"><?php echo $value['user'] ?></h6>
@@ -214,35 +212,44 @@
                                             <?php echo $value['noidung'] ?>
                                         </p>
                                     </div>
-                                
-                            </div>
+
+                                </div>
                             <?php endforeach ?>
                         </div>
                         <div class="reviews-form">
                             <h3 class="reviews-title">Add a review</h3>
                             <form action="" method="POST">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="single-form">
-                                            <input type="text" name="noidung" placeholder="Write your comments here"></input>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="single-form">
-                                            <input type="hidden" name="idpro" value="<?= $id ?>">
-                                            <input type="hidden" name="iduser" value="<?= $iduser ?>">
-                                            <input class="btn btn-dark btn-hover-primary" type="submit" name="guibinhluan" value="Gửi bình luận">
-                            </form>
-                            <?php
+    <div class="row">
+        <div class="col-md-12">
+            <div class="single-form">
+                <input type="text" name="noidung" placeholder="Write your comments here">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="single-form">
+                <input type="hidden" name="idpro" value="<?php echo $id; ?>">
+                <input type="hidden" name="iduser" value="<?php echo $iduser; ?>">
+                <input class="btn btn-dark btn-hover-primary" type="submit" name="guibinhluan" value="Gửi bình luận">
+            </div>
+        </div>
+    </div>
+</form>
 
-                            if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])) {
-                                $noidung = $_POST['noidung'];
-                                $idsp = $_POST['idpro'];
-                                $iduser = $_SESSION['user']['id'];
-                                $date = date('h:i:a d/m/y');
-                                sent_bl($idsp, $iduser, $noidung, $date);
-                            }
-                            ?>
+<?php
+if (isset($_POST['guibinhluan']) && $_POST['guibinhluan']) {
+    // Kiểm tra xem người dùng đã đăng nhập hay chưa
+    if (isset($_SESSION['user']) && isset($_SESSION['user']['id'])) {
+        $noidung = $_POST['noidung'];
+        $idsp = $_POST['idpro'];
+        $iduser = $_SESSION['user']['id'];
+        $date = date('h:i:a d/m/y');
+        sent_bl($idsp, $iduser, $noidung, $date);
+    } else {
+        // Người dùng chưa đăng nhập, xử lý logic tương ứng
+        echo "Bạn cần đăng nhập để gửi bình luận.";
+    }
+}
+?>
                         </div>
                     </div>
                 </div>
