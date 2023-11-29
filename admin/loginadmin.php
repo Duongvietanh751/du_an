@@ -25,17 +25,25 @@
 </head>
 <body>
     <div class="container">
-    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-        <label for="">Đăng Nhập Admin</label><br>
-        <label for="">Tài Khoản</label><br>
-        <input type="text" name="user" id=""><br>
-        <label for="">Mật Khẩu</label><br>
-        <input type="password" name="pass" id=""><br>
-        <?php if(isset($thongbao)&&($thongbao!="")){
-            echo "<font color='red'>".$thongbao."</font>";
-        } ?><br>
-        <input type="submit" name="dangnhap" value="Đăng nhập">
-    </form>
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+            <div class="row admin">
+            <label for="">Đăng Nhập Admin</label><br>
+            </div>
+            <div class="row">
+            <label for="">Tài Khoản</label><br>
+            <input type="text" name="user" id=""><br>
+            </div>
+            <div class="row">
+            <label for="">Mật Khẩu</label><br>
+            <input type="password" name="pass" id=""><br>
+            </div>
+            <div class="row">
+            <?php if(isset($thongbao)&&($thongbao!="")){
+                echo "<font color='red'>".$thongbao."</font>";
+            } ?><br>
+            </div>
+            <input type="submit" name="dangnhap" value="Đăng nhập">
+        </form>
     </div>
 </body>
 </html>
