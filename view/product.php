@@ -282,9 +282,7 @@
                          <div class="reviews-comment">
                              <!-- Single Comment Start  -->
                              <div class="single-reviews">
-                                 <div class="comment-author">
-                                     <img src="view/assets/images/author/author-1.png" width="100" height="100" alt="author" />
-                                 </div>
+
                                  <div class="comment-content">
                                      <div class="author-name-rating">
                                          <h6 class="name">Rosie Silva</h6>
@@ -303,55 +301,7 @@
                                      </p>
                                  </div>
                              </div>
-                             <!-- Single Comment End  -->
-                             <!-- Single Comment Start  -->
-                             <div class="single-reviews">
-                                 <div class="comment-author">
-                                     <img src="view/assets/images/author/author-2.png" width="100" height="100" alt="author" />
-                                 </div>
-                                 <div class="comment-content">
-                                     <div class="author-name-rating">
-                                         <h6 class="name">Aidyn Cody</h6>
-                                         <div class="review-star">
-                                             <div class="star" style="width: 80%"></div>
-                                         </div>
-                                     </div>
-                                     <span class="date">11/20/2023</span>
-                                     <p>
-                                         Lorem ipsum dolor sit amet consectetur
-                                         adipisicing elit. Esse deleniti itaque
-                                         velit explicabo at eum incidunt vel
-                                         reprehenderit maxime eos facere ut
-                                         pariatur voluptas aut, porro quia
-                                         molestias sequi cupiditate!
-                                     </p>
-                                 </div>
-                             </div>
-                             <!-- Single Comment End  -->
-                             <!-- Single Comment Start  -->
-                             <div class="single-reviews">
-                                 <div class="comment-author">
-                                     <img src="view/assets/images/author/author-3.png" width="100" height="100" alt="author" />
-                                 </div>
-                                 <div class="comment-content">
-                                     <div class="author-name-rating">
-                                         <h6 class="name">Rosie Silva</h6>
-                                         <div class="review-star">
-                                             <div class="star" style="width: 80%"></div>
-                                         </div>
-                                     </div>
-                                     <span class="date">11/20/2023</span>
-                                     <p>
-                                         Lorem ipsum dolor sit amet consectetur
-                                         adipisicing elit. Esse deleniti itaque
-                                         velit explicabo at eum incidunt vel
-                                         reprehenderit maxime eos facere ut
-                                         pariatur voluptas aut, porro quia
-                                         molestias sequi cupiditate!
-                                     </p>
-                                 </div>
-                             </div>
-                             <!-- Single Comment End  -->
+
                          </div>
                          <!-- Review Comment End  -->
 
@@ -361,16 +311,7 @@
 
                              <form action="#">
                                  <div class="row">
-                                     <div class="col-md-6">
-                                         <div class="single-form">
-                                             <input type="text" placeholder="Enter your name" />
-                                         </div>
-                                     </div>
-                                     <div class="col-md-6">
-                                         <div class="single-form">
-                                             <input type="email" placeholder="john.smith@example.com" />
-                                         </div>
-                                     </div>
+
                                      <div class="col-md-12">
                                          <div class="review-rating">
                                              <label class="title">Rating:</label>
@@ -394,15 +335,18 @@
                                          </div>
                                      </div>
                                      <div class="col-md-12">
+                                     <form action="?act=ctsp" method="POST">
                                          <div class="single-form">
-                                             <textarea placeholder="Write your comments here"></textarea>
+                                             <input type="text" placeholder="Write your comments here"></input>
                                          </div>
                                      </div>
                                      <div class="col-md-12">
                                          <div class="single-form">
-                                             <button class="btn btn-dark btn-hover-primary">
-                                                 Submit Review
-                                             </button>
+                                                 <input type="hidden" name="idpro" value="<?= $id ?>">
+                                                 <input type="hidden" name="iduser" value="<?= $iduser ?>">
+                                                 
+                                                 <input class="btn btn-dark btn-hover-primary" type="submit" name="guibinhluan" value="Gửi bình luận">
+                                             </form>
                                          </div>
                                      </div>
                                  </div>
@@ -474,7 +418,7 @@
                      <div class="tab-content">
                          <div class="tab-pane fade show active" id="tab7">
                              <div class="swiper-container">
-                             <div class="swiper-wrapper">
+                                 <div class="swiper-wrapper">
                                      <div class="swiper-slide">
                                          <!-- Single Product Start -->
                                          <div class="single-product">
