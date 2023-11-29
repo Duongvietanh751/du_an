@@ -7,20 +7,30 @@
     include"model/danhmuc.php";
     include"global.php";
     include"view/header.php";
+    include"model/binhluan.php";
+
     if((isset($_GET['act'])) && ($_GET['act']!="")){
         $act=$_GET['act'];
         switch ($act) {
             case 'shop':
                 $ds_sp = ds_sp();
                 $ds_dm = ds_dm();
-                include"view/shop.php";
+                include "view/shop.php";
                 break;
-            case 'catepro':
-                if(isset($_GET['iddm']) && ($_GET['iddm']) >0){
+            case 'shdm':
+                if(isset($_POST['keyw'])&& $_POST['keyw'] != ""){
+                    $keyw = $_POST['keyw'];
+                }else{
+                    $keyw = "";
+                }
+                if (isset($_GET['iddm']) && $_GET['iddm'] > 0) {
                     $iddm = $_GET['iddm'];
                     $sp_dm = sp_dm($iddm);
+                }if($_GET['iddm'] == 41){
+                    header("location: index.php?act=shop");
                 }
-                include"view/shop.php";
+                $ds_dm = ds_dm();
+                include"view/shdm.php";
                 break;
             case 'contact':
                     # code...
@@ -121,10 +131,10 @@
                 break;
             case 'product':
                 if(isset($_GET['idsp']) && ($_GET['idsp']) > 0 ){
-                    $id = $_GET['idsp'];
                     $ctsp = get1_sp($_GET['idsp']);
-                    extract($ctsp);
-                    $related = rela_pro($id,$iddm);
+                    $kh_bl = kh_bl($_GET['idsp']);
+                    
+                  
                 }
                 include"view/product.php";
                 break;
@@ -138,7 +148,6 @@
         $ds_sptab1 = ds_sptab1();
         $ds_sptab2 = ds_sptab2();
         $ds_sptab3 = ds_sptab3();
-        
         include"view/home.php";
     }
     include"view/footer.php";

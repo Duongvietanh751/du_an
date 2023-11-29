@@ -13,7 +13,7 @@ if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
         case 'danhmuc':
-            $ds_dm = ds_dm();
+            
             if (isset($_POST['btnsub'])) {
                 add_dm($_POST['tenloai']);
             }
@@ -24,15 +24,13 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id'])) {
                 $dm = get1_dm($_GET['id']);
             }
-            include"danhmuc/suadm.php";
-            break;
         case 'updm':
             if (isset($_POST['capnhat'])) {
                 $name = $_POST['tenloai'];
                 $id = $_POST['id'];
                 $sql = "UPDATE `danhmuc` SET `name` = '$name' WHERE `danhmuc`.`id` = '$id'";
                 pdo_execute($sql);
-                $thongbao="Sữa thành công";
+                $thongbao="Sửa thành công";
             }
             include"danhmuc/danhmuc.php";
             break;
@@ -68,6 +66,7 @@ if (isset($_GET['act'])) {
             if(isset($_GET['id'])){
                 $sp = get1_sp($_GET['id']);
             }
+            break;
         case 'upsp':
             if(isset($_POST['capnhat'])){
             $name = $_POST['name_sanpham'];
