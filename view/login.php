@@ -31,6 +31,15 @@
                                 <input type="password" placeholder="Password" name="pass" />
                             </div>
                             <div class="single-form">
+                                <span class="thongbao">
+                                <?php
+                                if(isset($thongbao)&&($thongbao!="")){
+                                    echo $thongbao;
+                                }
+                                ?>
+                                </span>
+                            </div>
+                            <div class="single-form">
                                 <input type="checkbox" id="remember" />
                                 <label for="remember"><span></span> Remember me</label>
                             </div>

@@ -12,7 +12,7 @@
     }
     function getuser($user,$pass){
         $sql="SELECT * FROM `taikhoan` WHERE `user`='".$user."' AND `pass`='".$pass."'  ";
-        $result = pdo_query($sql);
+        $result = pdo_query_one($sql);
         return $result;
     }
     function insert_taikhoan($Email,$user,$pass){

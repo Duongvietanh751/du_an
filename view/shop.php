@@ -81,7 +81,9 @@
                                                 <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
                                             </li>
                                             <li>
-                                                <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
+                                            <button data-id="<?=$value['id']?>" class="action" onclick="addToCart(<?=$value['id']?>,'<?=$value['name']?>',<?=$value['price']?>)">
+                                                <i class="pe-7s-shopbag"></i>
+                                            </button>
                                             </li>
                                             <li>
                                                 <a class="action" href="#"><i class="pe-7s-like"></i></a>
@@ -103,13 +105,14 @@
                             <div class="single-product-02 product-list">
                                 <div class="product-images">
                                     <a href="index.php?act=product&idsp=<?php echo $value['id']; ?>"><img src="<?php echo "upload/" . $value['img']; ?>" width="270" height="303" alt="product" /></a>
-
                                     <ul class="product-meta">
                                         <li>
                                             <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
                                         </li>
                                         <li>
-                                            <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
+                                        <button data-id="<?=$value['id']?>" class="action" onclick="addToCart(<?=$value['id']?>,'<?=$value['name']?>',<?=$value['price']?>)">
+                                                <i class="pe-7s-shopbag"></i>
+                                        </button>
                                         </li>
                                         <li>
                                             <a class="action" href="#"><i class="pe-7s-like"></i></a>
@@ -151,3 +154,28 @@
         </div>
     </div>
     <!-- Shop Section End -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    let totalProduct = document.getElementById('totalProduct');
+    function addToCart(productId, productName, productPrice) {
+        // console.log(productId, productName, productPrice);
+        // Sử dụng jQuery
+        $.ajax({
+            type: 'POST',
+            // Đường dẫ tới tệp PHP xử lý dữ liệu
+            url: './view/addToCart.php',
+            data: {
+                id: productId,
+                name: productName,
+                price: productPrice
+            },
+            success: function(response) {
+                totalProduct.innerText = response;
+                alert('Bạn đã thêm sản phẩm vào giỏ hàng thành công!')
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    }
+</script>
