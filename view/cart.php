@@ -133,9 +133,9 @@ if (empty($dataDb)) {
                                 </tbody>
                             </table>
                         </div> -->
-                        <div class="cart-total-btn">
-                            <a href="index.php?act=checkout" class="btn btn-dark btn-hover-primary btn-block">Proceed To Checkout</a>
-                        </div>
+                        <form action="index.php?act=checkout" method="post">
+                            <input type="submit" style="padding:10px;" name="order" value="Đặt Hàng">
+                        </form>
                     </div>
                     <!-- Cart Totals End -->
                 </div>

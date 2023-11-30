@@ -6,6 +6,7 @@
     include"model/sanpham.php";
     include"model/danhmuc.php";
     include"global.php";
+    include "model/order.php";
     include"view/header.php";
     include"model/binhluan.php";
 
@@ -56,8 +57,43 @@
                 }
                 include"view/cart.php";
                 break;
+            case "checkout":
+                    if (isset($_SESSION['cart'])) {
+                        $cart = $_SESSION['cart'];
+                        // print_r($cart);
+                        if (isset($_POST['order_confirm'])) {
+                            $txthoten = $_POST['txthoten'];
+                            $txttel = $_POST['txttel'];
+                            $txtemail = $_POST['txtemail'];
+                            $txtaddress = $_POST['txtaddress'];
+                            $pttt = $_POST['pttt'];
+                            // date_default_timezone_set('Asia/Ho_Chi_Minh');
+                            // $currentDateTime = date('Y-m-d H:i:s');
+                            if (isset($_SESSION['user'])) {
+                                $id_user = $_SESSION['user']['id'];
+                            } else {
+                                $id_user = 0;
+                            }
+                            $idBill = addOrder($id_user, $txthoten, $txttel, $txtemail, $txtaddress, $_SESSION['resultTotal'], $pttt);
+                            foreach ($cart as $item) {
+                                addOrderDetail($idBill, $item['id'], $item['price'], $item['quantity'], $item['price'] * $item['quantity']);
+                            }
+                            unset($_SESSION['cart']);
+                            $_SESSION['wishlist'] = $idBill;
+                            header("Location: index.php?act=wishlist");
+                        }
+                        include "view/checkout.php";
+                    } else {
+                        header("Location: index.php?act=listCart");
+                    }
+                    break;
             case 'wishlist':
-                # code...
+                if (isset($_SESSION['wishlist'])) {
+                    include 'view/wishlist.php';
+                } else {
+                    header("Location: index.php");
+                }
+                break;
             include"view/wishlist.php";
                 break;
             case 'checkout':

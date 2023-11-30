@@ -68,7 +68,6 @@
                                 <a href="#">Pages </a>
                                 <ul class="sub-menu">
                                     <li><a href="index.php?act=cart">Cart</a></li>
-                                    <li><a href="index.php?act=wishlist">Wishlist</a></li>
                                     <li><a href="index.php?act=checkout">Checkout</a></li>
                                     <li><a href="my-account.html">My Account</a></li>
                                     <li><a href="index.php?act=login">Login</a></li>
@@ -113,6 +112,7 @@
                             ?>
                             <li><a href="index.php?act=login">Hello :<?=$user?></a></li>
                             <li><a href="index.php?act=account">My Account</a></li>
+                            <li><a href="index.php?act=wishlist">Order Status</a></li>
                             <li><a href="index.php?act=checkout">Checkout</a></li>
                             <li><a href="index.php?act=logout">Logout</a></li>
                             <?php
