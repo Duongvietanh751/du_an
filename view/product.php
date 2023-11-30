@@ -237,7 +237,7 @@
 
 <?php
 if (isset($_POST['guibinhluan']) && $_POST['guibinhluan']) {
-    // Kiểm tra xem người dùng đã đăng nhập hay chưa
+   
     if (isset($_SESSION['user']) && isset($_SESSION['user']['id'])) {
         $noidung = $_POST['noidung'];
         $idsp = $_POST['idpro'];
@@ -245,7 +245,7 @@ if (isset($_POST['guibinhluan']) && $_POST['guibinhluan']) {
         $date = date('h:i:a d/m/y');
         sent_bl($idsp, $iduser, $noidung, $date);
     } else {
-        // Người dùng chưa đăng nhập, xử lý logic tương ứng
+        
         echo "Bạn cần đăng nhập để gửi bình luận.";
     }
 }
@@ -322,17 +322,16 @@ if (isset($_POST['guibinhluan']) && $_POST['guibinhluan']) {
                         <div class="tab-pane fade show active" id="tab7">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
+                                <?php foreach($ds_sptab1 as $key => $value):  ?>
                                     <div class="swiper-slide">
-                                        <!-- Single Product Start -->
                                         <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-01.jpg" width="270" height="303" alt="product" /></a>
+                                            <a href="index.php?act=product&idsp=<?php echo $value['id']; ?>"><img src="<?php echo "upload/".$value['img'] ?>" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Elona bedside grey
-                                                        table</a>
+                                                    <a href="index.php?act=product&idsp=<?php echo $value['id']; ?>"><?php echo $value['name'] ?></a>
                                                 </h4>
                                                 <div class="price">
-                                                    <span class="sale-price">$240.00</span>
+                                                    <span class="sale-price"><?php echo "$".$value['price'] ?></span>
                                                 </div>
                                             </div>
                                             <ul class="product-meta">
@@ -347,105 +346,26 @@ if (isset($_POST['guibinhluan']) && $_POST['guibinhluan']) {
                                                 </li>
                                             </ul>
                                         </div>
+                                       
                                         <!-- Single Product End -->
                                     </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Product Start -->
-                                        <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-02.jpg" width="270" height="303" alt="product" /></a>
-                                            <div class="product-content">
-                                                <h4 class="title">
-                                                    <a href="product-details.html">Simple minimal Chair</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span class="sale-price">$240.00</span>
-                                                </div>
-                                            </div>
-                                            <ul class="product-meta">
-                                                <li>
-                                                    <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Single Product End -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Product Start -->
-                                        <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-03.jpg" width="270" height="303" alt="product" /></a>
-                                            <div class="product-content">
-                                                <h4 class="title">
-                                                    <a href="product-details.html">Pendant Chandelier
-                                                        Light</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span class="sale-price">$240.00</span>
-                                                </div>
-                                            </div>
-                                            <ul class="product-meta">
-                                                <li>
-                                                    <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Single Product End -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Product Start -->
-                                        <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-04.jpg" width="270" height="303" alt="product" /></a>
-                                            <div class="product-content">
-                                                <h4 class="title">
-                                                    <a href="product-details.html">High quality vase
-                                                        bottle</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span class="sale-price">$240.00</span>
-                                                </div>
-                                            </div>
-                                            <ul class="product-meta">
-                                                <li>
-                                                    <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Single Product End -->
-                                    </div>
+                                    <?php endforeach ?>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab8">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
+                                <?php foreach($ds_sptab2 as $key => $value):  ?>
                                     <div class="swiper-slide">
-                                        <!-- Single Product Start -->
                                         <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-01.jpg" width="270" height="303" alt="product" /></a>
+                                            <a href="index.php?act=product&idsp=<?php echo $value['id']; ?>"><img src="<?php echo "upload/".$value['img'] ?>" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">Elona bedside grey
-                                                        table</a>
+                                                    <a href="index.php?act=product&idsp=<?php echo $value['id']; ?>"><?php echo $value['name'] ?></a>
                                                 </h4>
                                                 <div class="price">
-                                                    <span class="sale-price">$240.00</span>
+                                                    <span class="sale-price"><?php echo "$".$value['price'] ?></span>
                                                 </div>
                                             </div>
                                             <ul class="product-meta">
@@ -462,103 +382,23 @@ if (isset($_POST['guibinhluan']) && $_POST['guibinhluan']) {
                                         </div>
                                         <!-- Single Product End -->
                                     </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Product Start -->
-                                        <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-02.jpg" width="270" height="303" alt="product" /></a>
-                                            <div class="product-content">
-                                                <h4 class="title">
-                                                    <a href="product-details.html">Simple minimal Chair</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span class="sale-price">$240.00</span>
-                                                </div>
-                                            </div>
-                                            <ul class="product-meta">
-                                                <li>
-                                                    <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Single Product End -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Product Start -->
-                                        <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-03.jpg" width="270" height="303" alt="product" /></a>
-                                            <div class="product-content">
-                                                <h4 class="title">
-                                                    <a href="product-details.html">Pendant Chandelier
-                                                        Light</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span class="sale-price">$240.00</span>
-                                                </div>
-                                            </div>
-                                            <ul class="product-meta">
-                                                <li>
-                                                    <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Single Product End -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Product Start -->
-                                        <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-04.jpg" width="270" height="303" alt="product" /></a>
-                                            <div class="product-content">
-                                                <h4 class="title">
-                                                    <a href="product-details.html">High quality vase
-                                                        bottle</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span class="sale-price">$240.00</span>
-                                                </div>
-                                            </div>
-                                            <ul class="product-meta">
-                                                <li>
-                                                    <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Single Product End -->
-                                    </div>
+                                    <?php endforeach ?>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab9">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
+                                <?php foreach($ds_sptab3 as $key => $value):  ?>
                                     <div class="swiper-slide">
-                                        <!-- Single Product Start -->
                                         <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-04.jpg" width="270" height="303" alt="product" /></a>
+                                            <a href="index.php?act=product&idsp=<?php echo $value['id']; ?>"><img src="<?php echo "upload/".$value['img'] ?>" width="270" height="303" alt="product" /></a>
                                             <div class="product-content">
                                                 <h4 class="title">
-                                                    <a href="product-details.html">High quality vase
-                                                        bottle</a>
+                                                    <a href="index.php?act=product&idsp=<?php echo $value['id']; ?>"><?php echo $value['name'] ?></a>
                                                 </h4>
                                                 <div class="price">
-                                                    <span class="sale-price">$240.00</span>
+                                                    <span class="sale-price"><?php echo "$".$value['price'] ?></span>
                                                 </div>
                                             </div>
                                             <ul class="product-meta">
@@ -575,86 +415,7 @@ if (isset($_POST['guibinhluan']) && $_POST['guibinhluan']) {
                                         </div>
                                         <!-- Single Product End -->
                                     </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Product Start -->
-                                        <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-03.jpg" width="270" height="303" alt="product" /></a>
-                                            <div class="product-content">
-                                                <h4 class="title">
-                                                    <a href="product-details.html">Pendant Chandelier
-                                                        Light</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span class="sale-price">$240.00</span>
-                                                </div>
-                                            </div>
-                                            <ul class="product-meta">
-                                                <li>
-                                                    <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Single Product End -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Product Start -->
-                                        <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-01.jpg" width="270" height="303" alt="product" /></a>
-                                            <div class="product-content">
-                                                <h4 class="title">
-                                                    <a href="product-details.html">Elona bedside grey
-                                                        table</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span class="sale-price">$240.00</span>
-                                                </div>
-                                            </div>
-                                            <ul class="product-meta">
-                                                <li>
-                                                    <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Single Product End -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Product Start -->
-                                        <div class="single-product">
-                                            <a href="#"><img src="view/assets/images/product/product-10.jpg" width="270" height="303" alt="product" /></a>
-                                            <div class="product-content">
-                                                <h4 class="title">
-                                                    <a href="product-details.html">Round Swivel Chair</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span class="sale-price">$240.00</span>
-                                                </div>
-                                            </div>
-                                            <ul class="product-meta">
-                                                <li>
-                                                    <a class="action" data-bs-toggle="modal" data-bs-target="#quickView" href="#"><i class="pe-7s-search"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Single Product End -->
-                                    </div>
+                                    <?php  endforeach ?>
                                 </div>
                             </div>
                         </div>

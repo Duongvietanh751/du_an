@@ -1,8 +1,8 @@
 <?php
     function ds_dm(){
         $sql = "select * from danhmuc order by id desc";
-        $ds_dm=pdo_query($sql);
-        return $ds_dm;
+        $result=pdo_query($sql);
+        return $result;
     }
     function add_dm($tenloai){
         $sql = "insert INTO danhmuc(`name`) VALUES ('$tenloai')";

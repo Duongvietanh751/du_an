@@ -12,8 +12,7 @@ include "header.php";
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
-        case 'danhmuc':
-            
+        case 'danhmuc':      
             if (isset($_POST['btnsub'])) {
                 add_dm($_POST['tenloai']);
             }
@@ -24,6 +23,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id'])) {
                 $dm = get1_dm($_GET['id']);
             }
+           
         case 'updm':
             if (isset($_POST['capnhat'])) {
                 $name = $_POST['tenloai'];
@@ -32,7 +32,7 @@ if (isset($_GET['act'])) {
                 pdo_execute($sql);
                 $thongbao="Sửa thành công";
             }
-            include"danhmuc/danhmuc.php";
+            include"danhmuc/suadm.php";
             break;
         case 'xoadm':
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
@@ -66,7 +66,7 @@ if (isset($_GET['act'])) {
             if(isset($_GET['id'])){
                 $sp = get1_sp($_GET['id']);
             }
-            break;
+            
         case 'upsp':
             if(isset($_POST['capnhat'])){
             $name = $_POST['name_sanpham'];
