@@ -68,6 +68,7 @@ if (isset($_GET['act'])) {
             }
             
         case 'upsp':
+            $ds_dm = ds_dm();
             if(isset($_POST['capnhat'])){
             $name = $_POST['name_sanpham'];
             $price = $_POST['price'];

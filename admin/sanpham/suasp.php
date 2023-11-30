@@ -23,6 +23,15 @@
             <label for="">Mô tả</label>
             <textarea name="desc"  cols="30" rows="10" value="<?=$mota ?>"></textarea>
         </div>
+        <label for="">Danh mục</label>
+            <select name="danhmuc">
+                            <?php
+                                foreach($ds_dm as $danhmucc){
+                                    extract($danhmucc);
+                                    echo'<option value="'.$id.'">'.$name.'</option>';
+                                }
+                            ?>
+                    </select>
         <div id="thongbao" class="thongbao"></div>
         <div class="formdanhmuc_input">
             <input type="submit" value="Cập Nhật" name="capnhat">
