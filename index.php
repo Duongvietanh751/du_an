@@ -26,7 +26,7 @@
                 if (isset($_GET['iddm']) && $_GET['iddm'] > 0) {
                     $iddm = $_GET['iddm'];
                     $sp_dm = sp_dm($iddm);
-                }if($_GET['iddm']['name'] == "All"){
+                }if($_GET['iddm'] == 41){
                     header("location: index.php?act=shop");
                 }
                 $ds_dm = ds_dm();
