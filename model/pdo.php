@@ -4,7 +4,7 @@ function pdo_get_connection(){
     $username = "root";
     $password = "";
     try {
-        $conn = new PDO("mysql:host=$servername;dbname=duan1;port=4036;charset=utf8", $username, $password);
+        $conn = new PDO("mysql:host=$servername;dbname=duan2;charset=utf8", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     } catch(PDOException $e) {
@@ -55,6 +55,24 @@ function pdo_query_one($sql){
         $row=$stmt->fetch(PDO::FETCH_ASSOC);
         // đọc và hiển thị giá trị trong danh sách trả về
         return $row;
+    }
+    catch(PDOException $e){
+        throw $e;
+    }
+    finally{
+        unset($conn);
+    }
+}
+//Phương thức thanh toán
+function pdo_executeid($sql){
+    $sql_args=array_slice(func_get_args(),1);
+    try{
+        $conn=pdo_get_connection();
+        $stmt=$conn->prepare($sql);
+        $stmt->execute($sql_args);
+        $lastInsertId = $conn->lastInsertId();
+
+        return $lastInsertId;
     }
     catch(PDOException $e){
         throw $e;
