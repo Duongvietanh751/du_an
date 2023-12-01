@@ -126,6 +126,8 @@ if (isset($_GET['act'])) {
                 unset($_SESSION['role']);
                 header('location:loginadmin.php');
                 break;
+        case 'donhang':
+            
         default:
             include "home.php";
             break;
