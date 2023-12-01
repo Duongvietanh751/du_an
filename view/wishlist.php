@@ -16,9 +16,9 @@
     <!-- Page Banner Section End -->
 
     <!-- Shopping Cart Section Start -->
-    <div class="section section-padding">
+    <div class="section section-padding ">
         <div class="container">
-            <div class="cart-wrapper">
+            <div class="cart-wrapper mb">
             <div class="cart-table table-responsive">
                     <table class="table">
                         <thead>
@@ -31,10 +31,10 @@
                                 <th class="product-total-price">
                                     Total Price
                                 </th>
-                                <th class="product-add-to-cart">
+                                <!-- <th class="product-add-to-cart">
                                     Add to Cart
                                 </th>
-                                <th class="product-action">Action</th>
+                                <th class="product-action">Action</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -61,20 +61,22 @@
                                 <td class="product-total-price">
                                     <span class="price">$28.72</span>
                                 </td>
-                                <td class="product-add-to-cart">
+                                <!-- <td class="product-add-to-cart">
                                     <a href="#" class="btn btn-dark btn-hover-primary">Add to Cart</a>
                                 </td>
                                 <td class="product-action">
                                     <button class="remove">
                                         <i class="pe-7s-trash"></i>
                                     </button>
-                                </td>
+                                </td> -->
                             </tr>
                             </tbody>
                     </table>
                 </div>
+                </div>
                 <!-- Cart Wrapper Start -->
-                <div class="cart-table table-responsive">
+                <!-- <div class="cart-wrapper">
+                <div class="cart-table table-responsive ">
                     <table class="table">
                         <thead>
                             <tr>
@@ -117,7 +119,7 @@
                         </tbody>
                     </table>
                 </div>
-                <!-- Cart Wrapper End -->
+                Cart Wrapper End -->
             </div>
         </div>
     </div>

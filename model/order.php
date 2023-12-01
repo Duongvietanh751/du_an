@@ -9,4 +9,9 @@
         $sql="INSERT INTO order_detail (id_order, id_pro, giamua, soluong, thanhtien) VALUES ($id_order, $id_pro, $giamua, $soluong, $thanhtien );";
         pdo_execute($sql);
     }
+    function selectOrder(){
+        $sql="SELECT * FROM `order_detail` ORDER BY `id_order_detail` DESC";
+        $loadorder=pdo_execute($sql);
+        return $loadorder;
+    }
 ?>
