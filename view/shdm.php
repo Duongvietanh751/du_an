@@ -63,7 +63,7 @@
                         <!-- Shop Product Wrapper Start -->
                         <div class="shop-product-wrapper">
                             <div class="row">
-                                <?php  foreach($sp_dm as $key => $value): ?>
+                                <?php  foreach($dssp as $key => $value): ?>
                                 <div class="col-lg-4 col-sm-6">
                                     <!-- Single Product Start -->
                                     <div class="single-product">
@@ -99,7 +99,7 @@
                     <div class="tab-pane fade" id="list">
                         <!-- Shop Product Wrapper Start -->
                         <div class="shop-product-wrapper">
-                            <?php foreach($sp_dm as $key => $value): ?>
+                            <?php foreach($dssp as $key => $value): ?>
                             <div class="single-product-02 product-list">
                                 <div class="product-images">
                                     <a href="index.php?act=product&idsp=<?php echo $value['id']; ?>"><img src="<?php echo "upload/" . $value['img']; ?>" width="270" height="303" alt="product" /></a>

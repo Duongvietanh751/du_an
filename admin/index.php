@@ -8,15 +8,12 @@ include '../model/danhmuc.php';
 include '../model/sanpham.php';
 include '../model/binhluan.php';
 include '../model/taikhoan.php';
+include '../model/order.php';
 include "header.php";
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
         case 'danhmuc':
-            
-            if (isset($_POST['btnsub'])) {
-                add_dm($_POST['tenloai']);
-            }
             $ds_dm = ds_dm();
             include"danhmuc/danhmuc.php";
             break;
@@ -32,7 +29,7 @@ if (isset($_GET['act'])) {
                 pdo_execute($sql);
                 $thongbao="Sửa thành công";
             }
-            include"danhmuc/danhmuc.php";
+            include"danhmuc/suadm.php";
             break;
         case 'xoadm':
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
@@ -47,6 +44,14 @@ if (isset($_GET['act'])) {
             include "home.php";
             break;
         case 'sanpham':
+            if(isset($_POST['btn'])&&($_POST['btn'])){
+                $keyw=$_POST['keyw'];
+                $iddm=$_POST['iddm'];
+            }else{
+                $keyw="";
+                $iddm=0;
+            }
+            $listsanpham=loadall_sanpham($keyw,$iddm);
             if (isset($_POST['btnsub']) && ($_POST['btnsub'])){
                 $danhmuc=$_POST['iddm'];
                 $name=$_POST['name_sanpham'];
@@ -57,17 +62,17 @@ if (isset($_GET['act'])) {
                 move_uploaded_file($_FILES['img']['tmp_name'],$target_file);
                 $mota = $_POST['desc'];
                 add_sp($name, $price, $photo, $mota, $danhmuc);
-            }
+            }  
             $ds_dm = ds_dm();
-            $ds_sp = ds_sp();
             include"sanpham/sanpham.php";
             break;
         case 'suasp':
             if(isset($_GET['id'])){
                 $sp = get1_sp($_GET['id']);
             }
-            break;
+            
         case 'upsp':
+            $ds_dm = ds_dm();
             if(isset($_POST['capnhat'])){
             $name = $_POST['name_sanpham'];
             $price = $_POST['price'];
@@ -109,7 +114,6 @@ if (isset($_GET['act'])) {
             break;
         case 'taikhoan':
             $ds_tk = ds_tk();
-
             include "taikhoan/taikhoan.php";
             break;
 
@@ -125,6 +129,9 @@ if (isset($_GET['act'])) {
                 unset($_SESSION['role']);
                 header('location:loginadmin.php');
                 break;
+        case 'donhang':
+            include"donhang/donhang.php";
+            break;
         default:
             include "home.php";
             break;
