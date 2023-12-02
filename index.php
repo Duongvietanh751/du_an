@@ -88,7 +88,9 @@
                     break;
             case 'wishlist':
                 if (isset($_SESSION['wishlist'])) {
-                    include 'view/wishlist.php';
+                    $ds_order=selectOrder();
+                    include"view/wishlist.php";
+                    break;
                 } else {
                     header("Location: index.php");
                 }
