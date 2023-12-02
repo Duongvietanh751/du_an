@@ -6,10 +6,9 @@
     include"model/sanpham.php";
     include"model/danhmuc.php";
     include"global.php";
-    include "model/order.php";
+    include"model/order.php";
     include"view/header.php";
     include"model/binhluan.php";
-
     if((isset($_GET['act'])) && ($_GET['act']!="")){
         $act=$_GET['act'];
         switch ($act) {
@@ -19,17 +18,17 @@
                 include "view/shop.php";
                 break;
             case 'shdm':
-                if(isset($_POST['keyw'])&& $_POST['keyw'] != ""){
+                if ((isset($_POST['keyw']) && ($_POST['keyw'] != ""))) {
                     $keyw = $_POST['keyw'];
-                }else{
+                } else {
                     $keyw = "";
                 }
                 if (isset($_GET['iddm']) && $_GET['iddm'] > 0) {
                     $iddm = $_GET['iddm'];
                     $sp_dm = sp_dm($iddm);
-                }if($_GET['iddm'] == 41){
-                    header("location: index.php?act=shop");
                 }
+                $dssp = loadall_sanpham($keyw);
+               
                 $ds_dm = ds_dm();
                 include"view/shdm.php";
                 break;

@@ -14,5 +14,15 @@
         $result = pdo_query_one($sql);
         return $result;
     }
+    function sear_dm($keyw){
+        $sql = "select * from danhmuc where name ='%$keyw%'";
+        $dm = pdo_query($sql);
+        return $dm;
+    }
+    function loadall_danhmuc(){
+        $sql="select * from danhmuc order by id desc";
+        $listdanhmuc=pdo_query($sql);
+        return  $listdanhmuc;
+    }
     
 ?>
