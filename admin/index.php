@@ -130,7 +130,6 @@ if (isset($_GET['act'])) {
                 header('location:loginadmin.php');
                 break;
         case 'donhang':
-            $ds_dh = ds_order();
             include"donhang/donhang.php";
             break;
         default:
