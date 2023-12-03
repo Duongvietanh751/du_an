@@ -27,8 +27,7 @@
                     $iddm = $_GET['iddm'];
                     $sp_dm = sp_dm($iddm);
                 }
-                $dssp = loadall_sanpham($keyw);
-               
+                $dssp = sear_sp($keyw);
                 $ds_dm = ds_dm();
                 include"view/shdm.php";
                 break;

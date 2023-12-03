@@ -15,8 +15,9 @@
             <th>Ngày đặt hàng</th>
             <th>Trạng thái</th>
             <th>Chức năng</th>
+            
         </tr>
-        <?php foreach ($ds_dh as $key => $value ):
+        <?php foreach ($get1dh as $key => $value ):
          extract($value);
           ?>
         <tr>
@@ -30,8 +31,9 @@
           <td><?php echo $value['pttt'] ?></td>
           <td><?php echo $value['ngaydathang'] ?></td>
           <td><?php echo $value['trangthai'] ?></td>
-          <td><a href="<?php echo "index.php?act=suadh&id=".$value['id_order']; ?>">Sửa</a> / 
-          <a href="<?php echo "index.php?act=detail_order&id=".$value['id_order']; ?>">Xem chi tiết</a> </td>
+          <td><a href="<?php echo "index.php?act=suadh&id_order=".$value['id_order_detail']; ?>">Sửa</a> / 
+          <a href="<?php echo "index.php?act=suadh&id_order=".$value['id_order_detail']; ?>">Xem chi tiết</a> </td>
+
         </tr>
         <?php  endforeach ?>
       </table>

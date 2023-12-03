@@ -10,7 +10,6 @@ if (empty($dataDb)) {
             <!-- Page Banner Content End -->
             <div class="page-banner-content">
                 <h2 class="title">Cart</h2>
-
                 <ul class="breadcrumb">
                     <li><a href="index.php">Home</a></li>
                     <li class="active">Cart</li>

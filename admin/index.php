@@ -51,7 +51,7 @@ if (isset($_GET['act'])) {
                 $keyw="";
                 $iddm=0;
             }
-            $listsanpham=loadall_sanpham($keyw,$iddm);
+            $ds_sp = sear_sp($keyw,$iddm);
             if (isset($_POST['btnsub']) && ($_POST['btnsub'])){
                 $danhmuc=$_POST['iddm'];
                 $name=$_POST['name_sanpham'];
@@ -70,7 +70,7 @@ if (isset($_GET['act'])) {
             if(isset($_GET['id'])){
                 $sp = get1_sp($_GET['id']);
             }
-            
+        
         case 'upsp':
             $ds_dm = ds_dm();
             if(isset($_POST['capnhat'])){
@@ -130,7 +130,14 @@ if (isset($_GET['act'])) {
                 header('location:loginadmin.php');
                 break;
         case 'donhang':
+            $ds_dh = ds_dh();
             include"donhang/donhang.php";
+            break;
+        case 'detail_order':
+            if(isset($_GET['id_order_detail']) && ($_GET['id_order_detail'] > 0)) {
+                $get1dh = get1_dh($id_order_detail);               
+            }
+            include"donhang/ctdonhang.php";
             break;
         default:
             include "home.php";

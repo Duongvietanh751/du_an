@@ -61,7 +61,7 @@
         <th>Danh mục</th>
         <th>Chức năng</th>
       </tr>
-      <?php foreach ($listsanpham as $key => $value) :
+      <?php foreach ($ds_sp as $key => $value) :
       extract($value);
         $suasp = "index.php?act=suasp&id=" . $value['id'];
         $xoasp = "index.php?act=xoasp&id=" . $value['id'];

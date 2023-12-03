@@ -61,7 +61,7 @@ function sp_dm($iddm){
       $sanpham = pdo_query($sql);
       return $sanpham;
    }
-   function loadall_sanpham($keyw="",$iddm=0){
+   function sear_sp($keyw="",$iddm=0){
       $sql="select * from sanpham where 1";
       // where 1 tức là nó đúng
       if($keyw!=""){

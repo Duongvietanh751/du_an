@@ -14,4 +14,14 @@
         $loadorder=pdo_execute($sql);
         return $loadorder;
     }
+    function ds_dh(){
+        $sql = "select * from tbl_order";
+        $result = pdo_query($sql);
+        return $result;
+    }
+    function get1_dh($id_order_detail){
+        $sql = "select * from order_detail where id_order_detail = '$id_order_detail'";
+        $result = pdo_query_one($sql);
+        return $result;
+    }
 ?>
