@@ -14,6 +14,16 @@
         $loadorder=pdo_execute($sql);
         return $loadorder;
     }
+    function bieudo(){
+        $sql = "SELECT DATE(ngaydathang) as ngay, SUM(tongtien) as doanh_thu FROM tbl_order 
+        WHERE ngaydathang >= DATE_SUB(CURDATE(), INTERVAL 7 DAY)
+           OR (ngaydathang >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH) AND ngaydathang < CURDATE())
+           OR (ngaydathang >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND ngaydathang < CURDATE())
+        GROUP BY DATE(ngaydathang)";
+        $result = pdo_query($sql);
+        return $result;
+    
+    }
     function ds_dh(){
         $sql = "select * from tbl_order";
         $result = pdo_query($sql);
