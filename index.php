@@ -13,6 +13,7 @@
         $act=$_GET['act'];
         switch ($act) {
             case 'shop':
+              
                 $ds_sp = ds_sp();
                 $ds_dm = ds_dm();
                 include "view/shop.php";
@@ -20,14 +21,14 @@
             case 'shdm':
                 if ((isset($_POST['keyw']) && ($_POST['keyw'] != ""))) {
                     $keyw = $_POST['keyw'];
+                    $dssp = sear_sp($keyw);
                 } else {
                     $keyw = "";
                 }
                 if (isset($_GET['iddm']) && $_GET['iddm'] > 0) {
                     $iddm = $_GET['iddm'];
-                    $sp_dm = sp_dm($iddm);
+                    $dssp = sp_dm($iddm);
                 }
-                $dssp = sear_sp($keyw);
                 $ds_dm = ds_dm();
                 include"view/shdm.php";
                 break;
