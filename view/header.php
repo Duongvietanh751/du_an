@@ -57,10 +57,10 @@
                                 <a href="index.php?act=shop">Shop</a>
                                 <ul class="mega-sub-menu">
                                     <li class="manu-banner">
-                                        <a href="index.php?act=product"><img src="view/assets/images/banner-menu-01.jpg" width="465" height="170" alt="Banner" /></a>
+                                        <a href="index.php?act=shop"><img src="view/assets/images/banner-menu-01.jpg" width="465" height="170" alt="Banner" /></a>
                                     </li>
                                     <li class="manu-banner">
-                                        <a href="index.php?act=product"><img src="view/assets/images/banner-menu-02.jpg" width="465" height="170" alt="Banner" /></a>
+                                        <a href="index.php?act=shop"><img src="view/assets/images/banner-menu-02.jpg" width="465" height="170" alt="Banner" /></a>
                                     </li>
                                 </ul>
                             </li>
