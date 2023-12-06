@@ -57,7 +57,6 @@
                     </div>
                 </div>
                 <!-- Shop top Bar End -->
-
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="grid">
                         <!-- Shop Product Wrapper Start -->

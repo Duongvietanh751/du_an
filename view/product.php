@@ -77,16 +77,16 @@
                             <span class="sale-price">$<?= $price ?></span>
 
                         </div>
-                        <div class="review-wrapper">
+                        <!-- <div class="review-wrapper">
                             <div class="review-star">
                                 <div class="star" style="width: 80%"></div>
                             </div>
                             <p>
                                 <a href="#reviews">( 1 Customer Review )</a>
                             </p>
-                        </div>
+                        </div> -->
 
-                        <div class="product-color">
+                        <!-- <div class="product-color">
                             <span class="lable">Color:</span>
                             <ul>
                                 <li>
@@ -106,13 +106,13 @@
                                     <label for="color4"><span class="color-gray-dark"></span></label>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
 
                         <p>
                             <?= $mota ?>
                         </p>
 
-                        <div class="product-meta">
+                        <!-- <div class="product-meta">
                             <div class="product-quantity d-inline-flex">
                                 <button type="button" class="sub">
                                     -
@@ -124,7 +124,7 @@
                             </div>
                             <div class="meta-action">
                                 <button class="btn btn-dark btn-hover-primary">
-                                    <a href="index.php?act=cart">Add To Cart</a>
+                                    <a href="index.php?act=shop">Add To Cart</a>
                                 </button>
                             </div>
                             <div class="meta-action">
@@ -133,10 +133,10 @@
                             <div class="meta-action">
                                 <a class="action" href="#"><i class="pe-7s-shuffle"></i></a>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="product-info">
-                            <div class="single-info">
+                            <!-- <div class="single-info">
                                 <span class="lable">SKU:</span>
                                 <span class="value">Ch-256xl</span>
                             </div>
@@ -148,12 +148,12 @@
                             <div class="single-info">
                                 <span class="lable">tag:</span>
                                 <span class="value"><a href="#">Furniture</a></span>
-                            </div>
+                            </div> -->
                             <div class="single-info">
                                 <span class="lable">Share:</span>
                                 <ul class="social">
                                     <li>
-                                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                        <a href="https://www.facebook.com/vietanh.duong.33821"><i class="fa fa-facebook-f"></i></a>
                                     </li>
                                     <li>
                                         <a href="#"><i class="fa fa-dribbble"></i></a>

@@ -1,6 +1,6 @@
 <?php
-    function addOrder($id_user, $hoten, $sdt, $email, $diachi, $tongtien, $pttt){
-        $sql="INSERT INTO tbl_order (id_user, hoten, sdt, email, diachi, tongtien, pttt) VALUES ($id_user, '$hoten', '$sdt', '$email', '$diachi', $tongtien, $pttt);";
+    function addOrder($id_user, $hoten, $sdt, $email, $txtaddress, $tongtien, $pttt){
+        $sql="INSERT INTO tbl_order (id_user, hoten, sdt, email, diachi, tongtien, pttt) VALUES ($id_user, '$hoten', '$sdt', '$email', '$txtaddress', $tongtien, $pttt);";
         $id=pdo_executeid($sql);
         return $id;
     }
@@ -28,6 +28,31 @@
         $sql = "select * from tbl_order";
         $result = pdo_query($sql);
         return $result;
+    }
+    function ds_order($id_user){
+        $sql = "select * from tbl_order Where id_user=".$id_user;
+        $result = pdo_query($sql);
+        return $result;
+    }
+    function get_ttdh($n){
+        switch ($n) {
+            case '1':
+                $tt="Đang chờ duyệt";
+                break;
+                case '2':
+                    $tt="Đã xác nhận";
+                    break;
+                    case '3':
+                        $tt="Đang chờ vận chuyển";
+                        break;
+                        case '4':
+                            $tt="Hoàn Thành";
+                            break;
+            default:
+                $tt="Đang chờ duyệt";
+                break;
+        }
+        return $tt;
     }
     function get1_dh($id_order_detail){
         $sql = "select * from order_detail where id_order_detail = '$id_order_detail'";

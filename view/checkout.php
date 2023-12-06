@@ -26,36 +26,35 @@
                             <div class="checkout-title">
                                 <h4 class="title">Billing details</h4>
                             </div>
-
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="single-form">
-                                        <input type="text" placeholder="Last name *" name="txthoten">
+                                        <input type="text" placeholder="Last name *" name="txthoten" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="single-form">
                                         <label class="form-label">Street address *</label>
-                                        <input type="text" placeholder="House number and street name" name="txtaddress">
+                                        <input type="text" placeholder="House number and street name" name="txtaddress" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="single-form">
-                                        <input type="text" placeholder="Phone *" name="txttel">
+                                        <input type="text" placeholder="Phone *" name="txttel" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="single-form">
-                                        <input type="text" placeholder="Email address *" name="txtemail" >
+                                        <input type="text" placeholder="Email address *" name="txtemail" required>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="single-form checkout-note">
+                            <!-- <div class="single-form checkout-note">
                                 <label class="form-label">Payment methods</label>
                                 <p><input type="radio" name="pttt" id="" value="1" required> Thanh toán khi giao hàng</p>
                                 <p><input type="radio" name="pttt" id="" value="2" required> Chuyển khoản ngân hàng</p>
-                            </div>
+                            </div> -->
                             <div class="single-form checkout-note">
                                 <label class="form-label">Order notes</label>
                                 <textarea placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
@@ -114,7 +113,8 @@
                                 </table>
                             </div>
                                 <div class="single-form">
-                                <input type="submit" value="Xác nhận đặt hàng" name="order_confirm">
+                                <input type="submit" value="Thanh Toán Bằng MOMO" name="redirect">
+                                <input type="submit" value="Thanh Toán Khi Nhận Hàng" name="order_confirm">
                                 </div>
                             </div>
                         </div>
