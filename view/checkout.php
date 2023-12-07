@@ -50,11 +50,11 @@
                                 </div>
                             </div>
                             
-                            <!-- <div class="single-form checkout-note">
+                            <div class="single-form checkout-note">
                                 <label class="form-label">Payment methods</label>
                                 <p><input type="radio" name="pttt" id="" value="1" required> Thanh toán khi giao hàng</p>
                                 <p><input type="radio" name="pttt" id="" value="2" required> Chuyển khoản ngân hàng</p>
-                            </div> -->
+                            </div>
                             <div class="single-form checkout-note">
                                 <label class="form-label">Order notes</label>
                                 <textarea placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
