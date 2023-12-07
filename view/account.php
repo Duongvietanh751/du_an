@@ -23,34 +23,34 @@
                     <!-- My Account Menu Start -->
                     <div class="my-account-menu">
                         <ul class="nav account-menu-list flex-column">
-                            <li>
+                            <!-- <li>
                                 <a class="active" data-bs-toggle="pill" href="#pills-dashboard"><i class="fa fa-tachometer"></i>
                                     Dashboard</a>
-                            </li>
-                            <li>
+                            </li> -->
+                            <!-- <li>
                                 <a data-bs-toggle="pill" href="#pills-order"><i class="fa fa-shopping-cart"></i>
                                     Order</a>
-                            </li>
-                            <li>
+                            </li> -->
+                            <!-- <li>
                                 <a data-bs-toggle="pill" href="#pills-download"><i class="fa fa-cloud-download"></i>
                                     Download</a>
-                            </li>
-                            <li>
+                            </li> -->
+                            <!-- <li>
                                 <a data-bs-toggle="pill" href="#pills-payment"><i class="fa fa-credit-card"></i>
                                     Payment Method</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a data-bs-toggle="pill" href="#pills-address"><i class="fa fa-map-marker"></i>
                                     Address</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a data-bs-toggle="pill" href="#pills-account"><i class="fa fa-user"></i> Account
                                     Details</a>
                             </li>
                             <li>
                                 <a href="login.html"><i class="fa fa-sign-out"></i>
                                     Logout</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <!-- My Account Menu End -->

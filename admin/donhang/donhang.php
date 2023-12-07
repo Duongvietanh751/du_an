@@ -1,7 +1,7 @@
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <div class="">
-      <h1>Danh sách dơn hàng</h1>
+      <h1>Danh sách đơn hàng</h1>
       <table>
         <tr>
             <th>Mã đơn hàng</th>

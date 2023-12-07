@@ -57,10 +57,10 @@
                                 <a href="index.php?act=shop">Shop</a>
                                 <ul class="mega-sub-menu">
                                     <li class="manu-banner">
-                                        <a href="index.php?act=product"><img src="view/assets/images/banner-menu-01.jpg" width="465" height="170" alt="Banner" /></a>
+                                        <a href="index.php?act=shop"><img src="view/assets/images/banner-menu-01.jpg" width="465" height="170" alt="Banner" /></a>
                                     </li>
                                     <li class="manu-banner">
-                                        <a href="index.php?act=product"><img src="view/assets/images/banner-menu-02.jpg" width="465" height="170" alt="Banner" /></a>
+                                        <a href="index.php?act=shop"><img src="view/assets/images/banner-menu-02.jpg" width="465" height="170" alt="Banner" /></a>
                                     </li>
                                 </ul>
                             </li>
@@ -69,7 +69,6 @@
                                 <ul class="sub-menu">
                                     <li><a href="index.php?act=cart">Cart</a></li>
                                     <li><a href="index.php?act=checkout">Checkout</a></li>
-                                    <li><a href="my-account.html">My Account</a></li>
                                     <li><a href="index.php?act=login">Login</a></li>
                                     <li><a href="index.php?act=register">Register</a></li>
                                 </ul>
@@ -120,7 +119,7 @@
                             <?php } ?>
                             </ul>
                         </div>
-                        <a class="action" href="index.php?act=cart"><i class="pe-7s-like"></i></a>
+                        <!-- <a class="action" href="index.php?act=cart"><i class="pe-7s-like"></i></a> -->
                         <div class="dropdown">
                             <a class="action" href="index.php?act=cart" role="button" data-bs-toggle="dropdown">
                                 <i class="pe-7s-shopbag"></i>
@@ -146,41 +145,12 @@
                                                     </h6>
                                                     <span class="product-price"
                                                     >$19.12</span>
-                                                    <div class="attributes-content">
-                                                        <span
-                                                        ><strong>Color:</strong>
-                                                        White
-                                                    </span>
-                                                    </div>
                                                     <a class="cart-remove" href="#"><i class="las la-times"></i></a>
                                                 </div>
                                             </div>
                                             <!-- Single Cart Item End -->
                                         </li>
                                     </ul>
-                                </div>
-
-                                <div class="cart-price">
-                                    <div class="cart-subtotals">
-                                        <div class="price-inline">
-                                            <span class="label">Subtotal</span>
-                                            <span class="value">$42.70</span>
-                                        </div>
-                                        <div class="price-inline">
-                                            <span class="label">Shipping</span>
-                                            <span class="value">$7.00</span>
-                                        </div>
-                                        <div class="price-inline">
-                                            <span class="label">Taxes</span>
-                                            <span class="value">$0.00</span>
-                                        </div>
-                                    </div>
-                                    <div class="cart-total">
-                                        <div class="price-inline">
-                                            <span class="label">Total</span>
-                                            <span class="value">$49.70</span>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="checkout-btn">
                                     <a href="index.php?act=checkout" class="btn btn-dark btn-hover-primary d-block">Checkout</a>

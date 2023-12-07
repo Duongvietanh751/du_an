@@ -6,9 +6,9 @@
                 <div class="row">
                     <div class="col-xl-2 col-md-4">
                         <!-- Footer Logo Start -->
-                         <div class="footer-logo">
+                         <!-- <div class="footer-logo">
                             <a href="index.html"><img src="view/assets/images/AHN.png" width="154" height="46" alt="Logo" /></a>
-                        </div> 
+                        </div>  -->
                         <!-- Footer Logo End -->
                     </div>
                     <div class="col-xl-5 col-md-8">

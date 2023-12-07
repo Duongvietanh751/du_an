@@ -18,7 +18,7 @@
                                 Unique Furniture Style Design for Your
                                 Family
                             </p>
-                            <a href="index.php?act=product&idsp=<?php echo $value['id']; ?>" class="btn btn-primary btn-hover-dark btn-margin">purchase now</a>
+                            <a href="index.php?act=shop" class="btn btn-primary btn-hover-dark btn-margin">purchase now</a>
                         </div>
                         <!-- Slider Content End -->
 
@@ -99,11 +99,11 @@
 
                         <div class="banner-content">
                             <h3 class="title">
-                                <a href="shop-grid-4-column.html">New Ruben Teak <br />
+                                <a href="index.php?act=shop">New Ruben Teak <br />
                                     Sideboard</a>
                             </h3>
                             <span class="discount">30% Off</span>
-                            <a class="btn btn-primary btn-hover-dark" href="shop-grid-4-column.html">Shop Now</a>
+                            <a class="btn btn-primary btn-hover-dark" href="index.php?act=shop">Shop Now</a>
                         </div>
                     </div>
                     <!-- Single Banner End -->
@@ -115,11 +115,11 @@
 
                         <div class="banner-content content-02">
                             <h3 class="title">
-                                <a href="shop-grid-4-column.html">New Reversible <br />
+                                <a href="index.php?act=shop">New Reversible <br />
                                     Sofa</a>
                             </h3>
                             <span class="discount">30% Off</span>
-                            <a class="btn btn-primary btn-hover-dark" href="shop-grid-4-column.html">Shop Now</a>
+                            <a class="btn btn-primary btn-hover-dark" href="index.php?act=shop">Shop Now</a>
                         </div>
                     </div>
                     <!-- Single Banner End -->
@@ -131,11 +131,11 @@
 
                         <div class="banner-content">
                             <h3 class="title">
-                                <a href="shop-grid-4-column.html">New Lamp Light <br />
+                                <a href="index.php?act=shop">New Lamp Light <br />
                                     Collection</a>
                             </h3>
                             <span class="discount">30% Off</span>
-                            <a class="btn btn-primary btn-hover-dark" href="shop-grid-4-column.html">Shop Now</a>
+                            <a class="btn btn-primary btn-hover-dark" href="index.php?act=shop">Shop Now</a>
                         </div>
                     </div>
                     <!-- Single Banner End -->
@@ -160,10 +160,10 @@
 
                         <div class="banner-content">
                             <h3 class="title">
-                                <a href="shop-grid-left-sidebar.html">All New Furniture</a>
+                                <a href="index.php?act=shop">All New Furniture</a>
                             </h3>
                             <span class="discount">40% Off</span>
-                            <a class="btn btn-primary btn-hover-dark" href="shop-grid-3-column.html">Shop Now</a>
+                            <a class="btn btn-primary btn-hover-dark" href="index.php?act=shop">Shop Now</a>
                         </div>
                     </div>
                     <!-- Single Banner End -->
@@ -243,9 +243,9 @@
                                                                 <i class="pe-7s-shopbag"></i>
                                                             </button>
                                                             </li>
-                                                            <li>
+                                                            <!-- <li>
                                                                 <a class="action" href="#"><i class="pe-7s-like" data-id="<?=$id?>" class="action" onclick="addToCart(<?=$id?>,'<?=$name?>',<?=$price?>)"></i></a>
-                                                            </li>
+                                                            </li> -->
                                                         </ul>
                                                     </div>
                                                     <!-- Single Product End -->
@@ -279,9 +279,9 @@
                                                                 <i class="pe-7s-shopbag"></i>
                                                             </button>
                                                             </li>
-                                                            <li>
+                                                            <!-- <li>
                                                                 <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                            </li>
+                                                            </li> -->
                                                         </ul>
                                                     </div>
                                                     <!-- Single Product End -->
@@ -315,9 +315,9 @@
                                                                 <i class="pe-7s-shopbag"></i>
                                                             </button>
                                                             </li>
-                                                            <li>
+                                                            <!-- <li>
                                                                 <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                            </li>
+                                                            </li> -->
                                                         </ul>
                                                     </div>
                                                     <!-- Single Product End -->
@@ -352,7 +352,7 @@
                         adipisicing elit sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                     </p>
-                    <a href="shop-grid-left-sidebar.html" class="btn btn-primary btn-hover-dark btn-margin">purchase now</a>
+                    <a href="index.php?act=shop" class="btn btn-primary btn-hover-dark btn-margin">purchase now</a>
                 </div>
                 <!-- Call To Action Content End -->
             </div>
@@ -414,10 +414,10 @@
 
                         <div class="banner-content">
                             <h3 class="title">
-                                <a href="shop-grid-left-sidebar.html">All New Furniture</a>
+                                <a href="index.php?act=shop">All New Furniture</a>
                             </h3>
                             <span class="discount">40% Off</span>
-                            <a class="btn btn-primary btn-hover-dark" href="shop-grid-left-sidebar.html">Shop Now</a>
+                            <a class="btn btn-primary btn-hover-dark" href="index.php?act=shop">Shop Now</a>
                         </div>
                     </div>
                     <!-- Single Banner End -->
@@ -496,9 +496,9 @@
                                                                 <i class="pe-7s-shopbag"></i>
                                                             </button>
                                                             </li>
-                                                            <li>
+                                                            <!-- <li>
                                                                 <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                            </li>
+                                                            </li> -->
                                                         </ul>
                                                     </div>
                                                     <!-- Single Product End -->
@@ -532,9 +532,9 @@
                                                                 <i class="pe-7s-shopbag"></i>
                                                             </button>
                                                             </li>
-                                                            <li>
+                                                            <!-- <li>
                                                                 <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                            </li>
+                                                            </li> -->
                                                         </ul>
                                                     </div>
                                                     <!-- Single Product End -->
@@ -569,9 +569,9 @@
                                                                 <i class="pe-7s-shopbag"></i>
                                                             </button>
                                                             </li>
-                                                            <li>
+                                                            <!-- <li>
                                                                 <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                            </li>
+                                                            </li> -->
                                                         </ul>
                                                     </div>
                                                     <!-- Single Product End -->
@@ -718,9 +718,9 @@
                                                 <li>
                                                     <a class="action" href="#"><i class="pe-7s-shopbag"></i></a>
                                                 </li>
-                                                <li>
+                                                <!-- <li>
                                                     <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
                                         <!-- Single Product End -->
@@ -754,9 +754,9 @@
                                                 <i class="pe-7s-shopbag"></i>
                                             </button>
                                                 </li>
-                                                <li>
+                                                <!-- <li>
                                                     <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
                                         <!-- Single Product End -->
@@ -790,9 +790,9 @@
                                                 <i class="pe-7s-shopbag"></i>
                                                 </button>
                                                 </li>
-                                                <li>
+                                                <!-- <li>
                                                     <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
                                         <!-- Single Product End -->
@@ -925,7 +925,7 @@
                         <div class="swiper-slide">
                             <!-- Single Blog Start -->
                             <div class="single-blog">
-                                <a href="blog-details-left-sidebar.html"><img src="view/assets/images/blog/blog-01.jpg" width="370" height="230" alt="Blog" /></a>
+                                <a href="index.php?act=blog"><img src="view/assets/images/blog/blog-01.jpg" width="370" height="230" alt="Blog" /></a>
 
                                 <div class="blog-content">
                                     <ul class="blog-meta">
@@ -940,10 +940,9 @@
                                         </li>
                                     </ul>
                                     <h4 class="title">
-                                        <a href="blog-details-left-sidebar.html">Unique products that will
+                                        <a href="index.php?act=blog">Unique products that will
                                             impress your home.</a>
                                     </h4>
-                                    <a href="blog-details-left-sidebar.html" class="btn btn-dark btn-hover-primary">Read More</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -951,7 +950,7 @@
                         <div class="swiper-slide">
                             <!-- Single Blog Start -->
                             <div class="single-blog">
-                                <a href="blog-details-left-sidebar.html"><img src="view/assets/images/blog/blog-02.jpg" width="370" height="230" alt="Blog" /></a>
+                                <a href="index.php?act=blog"><img src="view/assets/images/blog/blog-02.jpg" width="370" height="230" alt="Blog" /></a>
 
                                 <div class="blog-content">
                                     <ul class="blog-meta">
@@ -966,11 +965,10 @@
                                         </li>
                                     </ul>
                                     <h4 class="title">
-                                        <a href="blog-details-left-sidebar.html">Interior designer Nancy,
+                                        <a href="index.php?act=blog">Interior designer Nancy,
                                             the witch of the unique
                                             space.</a>
                                     </h4>
-                                    <a href="blog-details-left-sidebar.html" class="btn btn-dark btn-hover-primary">Read More</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -978,7 +976,7 @@
                         <div class="swiper-slide">
                             <!-- Single Blog Start -->
                             <div class="single-blog">
-                                <a href="blog-details-left-sidebar.html"><img src="view/assets/images/blog/blog-03.jpg" width="370" height="230" alt="Blog" /></a>
+                                <a href="index.php?act=blog"><img src="view/assets/images/blog/blog-03.jpg" width="370" height="230" alt="Blog" /></a>
 
                                 <div class="blog-content">
                                     <ul class="blog-meta">
@@ -993,10 +991,9 @@
                                         </li>
                                     </ul>
                                     <h4 class="title">
-                                        <a href="blog-details-left-sidebar.html">Decorate your home with the
+                                        <a href="index.php?act=blog">Decorate your home with the
                                             most modern furnishings.</a>
                                     </h4>
-                                    <a href="blog-details-left-sidebar.html" class="btn btn-dark btn-hover-primary">Read More</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->

@@ -37,7 +37,7 @@
                                     </div>
                                     <div class="info-content">
                                         <p>
-                                            <a href="tel:+00125458222">+00 125 458 222</a>
+                                            <a href="tel:+84339634231">+84 339634231</a>
                                         </p>
                                     </div>
                                 </div>
@@ -48,7 +48,7 @@
                                     </div>
                                     <div class="info-content">
                                         <p>
-                                            <a href="mailto:demo@yourmail.com">demo@yourmail.com</a>
+                                            <a href="mailto:duongvietanh751@gmail.com">HNADECOR@gmail.com</a>
                                         </p>
                                     </div>
                                 </div>
@@ -80,13 +80,12 @@
                                 </li>
                             </ul>
                             <!-- Contact Social End -->
-
                             <img src="view/assets/images/contact-info.png" alt="Contact-info" />
                         </div>
                     </div>
                     <div class="col-lg-8">
                         <!-- Contact Form Start  -->
-                        <div class="contact-form">
+                        <!-- <div class="contact-form">
                             <form id="contact-form" action="https://htmldemo.net/furbar-1/furbar/view/assets/php/contact.php" method="post">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -125,7 +124,7 @@
                                 </div>
                             </form>
                         </div>
-                        <!-- Contact Form End  -->
+                        Contact Form End  -->
                     </div>
                 </div>
             </div>
