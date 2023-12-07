@@ -14,7 +14,6 @@ if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
         case 'danhmuc':
-            
             $ds_dm = ds_dm();
             include"danhmuc/danhmuc.php";
             break;
@@ -136,16 +135,15 @@ if (isset($_GET['act'])) {
             break;
         case 'detail_order':
             if(isset($_GET['id_order_detail']) && ($_GET['id_order_detail'] > 0)) {
+                $get1dh = get1_dh($id_order_detail);               
             }
             include"donhang/ctdonhang.php";
-            break;  
+            break;
         default:
-        
-            include"home.php";
+            include "home.php";
             break;
     }
 } else {
-   
     include "home.php";
 }
 include "footer.php";
