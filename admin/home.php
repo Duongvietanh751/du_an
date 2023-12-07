@@ -26,9 +26,20 @@
           <!-- small box -->
           <div class="small-box bg-info">
             <div class="inner">
-              <h3>150</h3>
+            <?php
+            
+          $new = new_order();
 
-              <p>New Orders</p>
+          if (is_array($new)) 
+            extract($new);
+        
+           
+            if (isset($moi)) {
+                echo "<h3>$moi</h3>";
+            } 
+            ?>
+              
+              <p>Đơn hàng mới trong 1 ngày qua</p>
             </div>
             <div class="icon">
               <i class="ion ion-bag"></i>
@@ -56,9 +67,16 @@
           <!-- small box -->
           <div class="small-box bg-warning">
             <div class="inner">
-              <h3>44</h3>
+              <?php
+           $tk = so_tk();
+          if (is_array($tk)) 
+          extract($tk);
+          
+          echo "<h3>$songuoidung</h3>";
+?>
+            
 
-              <p>User Registrations</p>
+              <p>Người dùng</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
