@@ -59,4 +59,13 @@
         $result = pdo_query_one($sql);
         return $result;
     }
+    function new_order()
+{
+    $sql = "SELECT COUNT(*) AS moi
+    FROM tbl_order
+    WHERE ngaydathang >= NOW() - INTERVAL 1 DAY;";
+    $result = pdo_query_one($sql);    
+    return $result;
+
+}
 ?>
