@@ -140,7 +140,7 @@ if (isset($_GET['act'])) {
             include"donhang/ctdonhang.php";
             break;  
         default:
-            $new = new_order();
+        
             include"home.php";
             break;
     }
