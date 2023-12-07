@@ -24,13 +24,4 @@
         $sp=pdo_query_one($sql);
         return $sp;
     }
-    function so_tk()
-{
-    $sql = "SELECT COUNT(*) AS songuoidung
-    FROM taikhoan ";
-    $result = pdo_query_one($sql);    
-    return $result;
-   
-}
-    
 ?>
