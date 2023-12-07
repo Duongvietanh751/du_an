@@ -69,7 +69,6 @@
                                 <ul class="sub-menu">
                                     <li><a href="index.php?act=cart">Cart</a></li>
                                     <li><a href="index.php?act=checkout">Checkout</a></li>
-                                    <li><a href="my-account.html">My Account</a></li>
                                     <li><a href="index.php?act=login">Login</a></li>
                                     <li><a href="index.php?act=register">Register</a></li>
                                 </ul>
@@ -120,7 +119,7 @@
                             <?php } ?>
                             </ul>
                         </div>
-                        <a class="action" href="index.php?act=cart"><i class="pe-7s-like"></i></a>
+                        <!-- <a class="action" href="index.php?act=cart"><i class="pe-7s-like"></i></a> -->
                         <div class="dropdown">
                             <a class="action" href="index.php?act=cart" role="button" data-bs-toggle="dropdown">
                                 <i class="pe-7s-shopbag"></i>

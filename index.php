@@ -171,7 +171,7 @@
                         header('Location: index.php');
                         // $thongbao="bạn đã đăng nhập thành công ";
                     } else {
-                        $thongbao = "tài khoản không tồn tại. Vui lòng đăng ký";
+                        $thongbao = "Tài Khoản Hoặc Mật Khẩu Không Đúng !";
                     }
                 }
                 include"view/login.php";

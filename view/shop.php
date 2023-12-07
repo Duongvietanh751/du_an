@@ -84,9 +84,9 @@
                                                 <i class="pe-7s-shopbag"></i>
                                             </button>
                                             </li>
-                                            <li>
+                                            <!-- <li>
                                                 <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </div>
                                     <!-- Single Product End -->
@@ -113,9 +113,9 @@
                                                 <i class="pe-7s-shopbag"></i>
                                         </button>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a class="action" href="#"><i class="pe-7s-like"></i></a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                                 <div class="product-content">
